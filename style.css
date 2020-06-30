@@ -94,6 +94,24 @@ footer a:hover {
     padding:  2% 3%;
     font-size: 1.2rem;
 }
+/* Background image */
+.bg {
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    margin-bottom: 3%;
+}
+/* Typewriter effect woman */
+.typedtext {
+    font-family: 'Waiting for the Sunrise', cursive; 
+    font-size: 2.5rem; 
+    margin: 10px 50px; 
+    letter-spacing: 6px; 
+    font-weight: bold;
+    color: white;
+
+}
 @media (max-width: 992px) {
     .carousel-caption {
         position: absolute;
