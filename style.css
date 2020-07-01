@@ -30,7 +30,7 @@ a:hover {
 
 .carousel-caption {
     position: absolute;
-    top: 35%;
+    top: 40%;
     transform: translateY(-50%);
 }
 
@@ -156,13 +156,13 @@ footer a:hover {
 @media (max-width: 992px) {
     .carousel-caption {
         position: absolute;
-        top: 30%;
+        top: 45%;
         transform: translateY(-50%);
     }
     .carousel-caption h1 {
         text-shadow: 1px 1px 15px black;
         font-size: 300%;
-        margin: 0.5rem;
+        margin: 0.5rem; 
     }
     
     .carousel-caption h3 {
@@ -170,11 +170,9 @@ footer a:hover {
         font-size: 200%;
     }
     
-    
     .carousel-caption button {
         font-size: 140%;
-        margin-top: 45%;
-
+        margin-top: 27%;
     }
 
     footer {
@@ -218,7 +216,7 @@ footer a:hover {
     
     .carousel-caption button {
         font-size: 90%;
-        margin-top: 35%;
+        margin-top: 20%;
     }
     .bestseller-section h1 {
         font-size: 230%;
@@ -239,9 +237,12 @@ footer a:hover {
         font-size: 1.2rem;
 
     }
+    .carousel-caption {
+
+    }
     .carousel-caption button {
         font-size: 90%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     .carousel-caption h1 {
         text-shadow: 1px 1px 15px black;
