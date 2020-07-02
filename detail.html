@@ -69,53 +69,53 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <img src="img/man/man4.jpg" alt="" style="width: 80%; height:80%;">
+                <img id="main-image" src="img/man/man4.jpg" alt="" style="width: 80%; height:80%;">
             </div>
             <div class="col-md-4">
                 <h2>Jordan 1 Retro High Zoom White</h2>
                 <h2 style="margin-top: 20px;">$340</h2>
                 <p>Size</p>
                 <div class="size">
-                    <button type="button" class="btn btn-outline-secondary selected">S</button>
-                    <button type="button" class="btn btn-outline-secondary">M</button>
-                    <button type="button" class="btn btn-outline-secondary">L</button>
-                    <button type="button" class="btn btn-outline-secondary">XL</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">S</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">M</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">L</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">XL</button>
                 </div>
                 <p>Color</p>
-                    <div class="color"> 
-                        <button class="btn btn-primary"></button>
-                        <button class="btn btn-secondary"></button>
-                        <button class="btn btn-success"></button>
-                        <button class="btn btn-danger"></button>
-                        <button class="btn btn-warning"></button>
-                        <button class="btn btn-info"></button>
-                        <button class="btn btn-light"></button>                 
-                    </div>
+                <div class="color" id="">
+                    <button class="btn btn-primary" id="blue-color"></button>
+                    <button class="btn btn-secondary" id="grey-color"></button>
+                    <button class="btn btn-success" id="green-color"></button>
+                    <button class="btn btn-danger" id="red-color"></button>
+                    <button class="btn btn-warning" id="yellow-color"></button>
+                    <button class="btn btn-info" id="blue-color-2"> </button>
+                </div>
                 <p>Number</p>
                 <form>
                     <select id="mySelect">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
-                  </form>
-                  <script>
-                  function myFunction() {
-                    document.getElementById("mySelect").value = "Select";
-                  }
-                  </script>
-                <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"  onclick="window.location.href='index.html'">Add to Cart</button>
+                </form>
+                <script>
+                    function myFunction() {
+                        document.getElementById("mySelect").value = "Select";
+                    }
+                </script>
+                <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"
+                    onclick="window.location.href='index.html'">Add to Cart</button>
                 <p>- Đổi hàng trong vòng 72h <br>
-                    - Phí vận chuyển nội thành Hà Nội: 20.000đ  <br>
+                    - Phí vận chuyển nội thành Hà Nội: 20.000đ <br>
                     - Phí vận chuyển ngoại thành/ngoại tỉnh: 35.000 <br>
                     - Thanh toán khi nhận hàng <br>
                     - Không áp dụng đổi/trả cho sản phẩm khuyến mãi</p>
             </div>
         </div>
     </div>
-  
+
     <!-- Footer/About Us -->
 
     <footer>
@@ -223,7 +223,7 @@
 
 
     <script src="app.js"></script>
-
+    <script src="color-select.js"></script>
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
