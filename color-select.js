@@ -25,3 +25,8 @@ document.getElementById('yellow-color').addEventListener('click', function() {
 document.getElementById('blue-color-2').addEventListener('click', function() {
     mainImg.setAttribute('src',splitMainSource[0]+"-blue2.jpg")
 });
+
+// Đặt title theo tên sản phẩm
+let productName = document.getElementById("product-name").innerHTML;
+let productTitle = document.getElementById("product-page-title");
+productTitle.innerHTML = productName;
