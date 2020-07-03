@@ -8,15 +8,15 @@ function signUp() {
         password: newPassword
     }
 
-    if (sessionStorage.userList) {
-        userJS = JSON.parse(sessionStorage.getItem('userList'));
+    if (localStorage.userList) {
+        userJS = JSON.parse(localStorage.getItem('userList'));
     } else {
         userJS = [];
     }
 
     userJS.push(newUser);
-    sessionStorage.setItem("userList", JSON.stringify(userJS));
-    userArray = sessionStorage.getItem("userList")
+    localStorage.setItem("userList", JSON.stringify(userJS));
+    userArray = localStorage.getItem("userList")
     console.log("userArray: ", (userArray));
 
     document.getElementById('signUpMess').innerHTML = "Successfully Registered! <br>"
@@ -33,7 +33,7 @@ function logIn() {
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
 
-    userArray = JSON.parse(sessionStorage.getItem("userList"));
+    userArray = JSON.parse(localStorage.getItem("userList"));
     console.log(userArray)
 
 
@@ -43,26 +43,26 @@ function logIn() {
             document.getElementById('alert').style.display = "block"
             document.getElementById('alert').innerHTML = "You will be redirected to the homepage"
             logedUsername = userArray[i].name;
-            sessionStorage.setItem('logedUsername', logedUsername);
+            localStorage.setItem('logedUsername', logedUsername);
             
         }
         else {
             document.getElementById('alert').style.display = "block";
-            sessionStorage.setItem("check", check);
+            localStorage.setItem("check", check);
         }
         if (check == 1) {
             setTimeout(function () {
                 window.location.href = "index.html";
             }, 3000);
-            sessionStorage.setItem("check", check);
+            localStorage.setItem("check", check);
         }
     }
 
 
     //Lưu các trạng thái đăng nhập (Đã đăng nhập -> hiện tên người dùng -> Xóa nút Login) vào SessionStorage để dữ liệu không bị thay đổi trên các trang HTML
 }
-let displayLogin = JSON.parse(sessionStorage.getItem("check"));
-let displayUser = (sessionStorage.getItem("logedUsername"));
+let displayLogin = JSON.parse(localStorage.getItem("check"));
+let displayUser = (localStorage.getItem("logedUsername"));
 console.log(displayLogin)
 let userIdenity = document.getElementById('userIdentity');
 let cartIcon = document.getElementById('cart-icon');
@@ -79,8 +79,8 @@ if (displayLogin == 1) {
 function logOut() {
     console.log(displayLogin)
     displayLogin = 0
-    sessionStorage.setItem("check", displayLogin);
-    sessionStorage.removeItem("logedUsername");
+    localStorage.setItem("check", displayLogin);
+    localStorage.removeItem("logedUsername");
     window.location.href = "index.html";
     if (displayLogin == 1) {
         cartIcon.style.display = "none";
