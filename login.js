@@ -44,11 +44,10 @@ function logIn() {
             document.getElementById('alert').innerHTML = "You will be redirected to the homepage"
             logedUsername = userArray[i].name;
             sessionStorage.setItem('logedUsername', logedUsername);
-
+            
         }
         else {
             document.getElementById('alert').style.display = "block";
-            check = 0;
             sessionStorage.setItem("check", check);
         }
         if (check == 1) {
@@ -83,4 +82,11 @@ function logOut() {
     sessionStorage.setItem("check", displayLogin);
     sessionStorage.removeItem("logedUsername");
     window.location.href = "index.html";
+    if (displayLogin == 1) {
+        cartIcon.style.display = "none";
+        userIdenity.innerHTML = displayUser;
+    } else {
+        logOutIcon.style.display = "none";
+        cartIcon.style.display = "inline";
+    }
 }
