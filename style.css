@@ -151,8 +151,8 @@ footer a:hover {
 .sale-bot span {
     font-size: 2rem;
     color: #3d3d3d;
-
 }
+/* Login/Logout/SignUp */
 @media (max-width: 992px) {
     .carousel-caption {
         position: absolute;
@@ -237,9 +237,7 @@ footer a:hover {
         font-size: 1.2rem;
 
     }
-    .carousel-caption {
 
-    }
     .carousel-caption button {
         font-size: 90%;
         margin-top: 20%;
