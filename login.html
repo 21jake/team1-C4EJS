@@ -9,22 +9,24 @@
 <body>
     <div class="login">
         <img src="img/logo.jpg" alt="">
-        <h1>Sign In</h1>
+        <h1>Log In</h1>
         <div class="text">
-            <input type="text">
-            <div class="placeholder">Username</div>
+            <input type="text" placeholder="Username" id="username">
         </div>
         <div class="text">
-            <input type="password">
-            <div class="placeholder">Password</div>
+            <input type="password" placeholder="Password" id="password">
         </div>
         <div class="checkbox">
-            <input type="checkbox">Remember me
+            <input type="checkbox"> <p>Remember me</p>
         </div>
+
+        <h3 id="alert" style="display: none;" >Incorrect username or password!</h3>
     
-        <button class="btn" onclick="window.location.href='index.html'">Login</button>
-        <a href="#">CAN'T SIGN IN</a>
-        <a href="#">CREATE AN ACCOUNT</a>
+        <button class="btn" onclick="logIn()">Login</button>
+        <a href="index.html">GO TO HOMEPAGE</a>
+        <a href="signup.html" target="_blank">CREATE AN ACCOUNT</a>
     </div>    
+
+    <script src="login.js"></script>
 </body>
 </html>

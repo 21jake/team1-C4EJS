@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>New Arrivals</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f82ed006cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="typewritter-effect.css">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+
+            <a href="index.html" > <img src="img/logo.jpg" alt="logo-image">
+
+            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="nav-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="new-arrival.html" class="nav-link">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="man.html" class="nav-link">Man</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="woman.html" class="nav-link">Woman</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="sale.html" class="nav-link">SALE OFF</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="best-seller.html" class="nav-link">Bestseller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class=" d-md-inline">View Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="cart-icon">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class=" d-md-inline">Log In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
+                        <a href="new-arrival - page 2.html" class="nav-link" title="Click here to log out">
+                            <i class="fas fa-sign-out-alt" ></i>
+                            <span class="d-md-inline" id="userIdentity"  ></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <!-- Background image -->
+    <div class="bg row justify-content-center align-items-center padding" style="background-image: url(img/background-photo/background-newarrivals.jpeg);">
+        <div class="css-typing col-md-6 ">
+            <p>These are...</p>
+            <p>our lastest and cutting edge</p>
+            <p>pair of sneakers!</p>
+        </div>
+    </div>
+
+    <!-- End of Background image -->
+
+    <!-- New Arrival Section -->
+
+    <div class="container-fluid padding new-arrivals-section">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4">New Arrivals</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid padding new-arrivals-section">
+        <div class="row padding card-section">
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na9.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">ADIDAS NMD R1 BLUE</h4>
+                        </a>
+                        <p class="card-text lead">Price: $170</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="ADIDAS NMD R1 BLUE" 
+                            data-price="170">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na10.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">ADIDAS 4D RUN 1.0 PARLEY</h4>
+                        </a>
+                        <p class="card-text lead">Price: $225</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="ADIDAS 4D RUN 1.0 PARLEY" data-price="225">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na11.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">PUMA BMW M Motorsport</h4>
+                        </a>
+                        <p class="card-text lead">Price: $180</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="PUMA BMW M Motorsport " data-price="180">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na12.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">ADIDAS PRIMEBLUE ULTRABOOST</h4>
+                        </a>
+                        <p class="card-text lead">Price: $190</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="ADIDAS PRIMEBLUE ULTRABOOST" data-price="190">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na13.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">NIKE AIR FORCE 1 SHADOW</h4>
+                        </a>
+                        <p class="card-text lead">Price: $220</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="NIKE AIR FORCE 1 SHADOW" data-price="220">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na14.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">D&G DAYMASTER SNEAKERS IN NAPPA</h4>
+                        </a>
+                        <p class="card-text lead">Price: $225</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="D&G DAYMASTER SNEAKERS IN NAPPA" data-price="225">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na15.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">NIKE JORDAN AIR LATITUDE 720</h4>
+                        </a>
+                        <p class="card-text lead">Price: $250</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="NIKE JORDAN AIR LATITUDE 720" data-price="250">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card padding">
+                    <a href="#"><img src="img/newarrivals/na16.jpg" alt="" class="w-100"></a>
+                    <div class="card-body">
+                        <a href="#">
+                            <h4 class="card-title">D&G LIMITED EDITION PORTOFINO</h4>
+                        </a>
+                        <p class="card-text lead">Price: $340</p>
+                        <a href="#"><button type="button" class="btn btn-primary" data-name="D&G LIMITED EDITION PORTOFINO" data-price="340">Add to cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination phân trang -->
+
+    <div class="container-fluid padding">
+        <div class="row">
+            <nav aria-label="Page navigation" class="col-12">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="new-arrival.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="new-arrival - page 3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer/About Us -->
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-4 padding">
+                    <h1 class="display-4 ">TeamOne</h1>
+                    <hr class="light">
+                    <p>Team one is a fictional entity selling apparel and sneakers. We're a team of four students
+                        learning JavaScript and this is our first project together. This sample website is powered by
+                        HTML, CSS, JavaScript and Bootstrap.</p>
+                    <p>We strongly advise against using this website for commercial intent. This is built purely for
+                        educational purposes, thus every image and even the logo is pirated. Be careful.</p>
+                </div>
+                <div class="col-md-6  col-lg-4">
+                    <div class="row padding">
+                        <div class="col-12">
+                            <h2>Featured Products</h2>
+                        </div>
+                    </div>
+                    <hr class="light">
+
+                    <div class="row padding">
+                        <div class="row col-12">
+                            <a class="col-4" href="#"><img src="img/bestseller/bestseller2.jpg" alt=""
+                                    class="w-100 "></a>
+                            <div class="col-8">
+                                <a href="#">
+                                    <h5>Nike Fairy Air Dream in Heels</h5>
+                                </a>
+                                <p>Price: $120</p>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <a class="col-4" href="#"><img src="img/bestseller/bestseller3.jpg" alt=""
+                                    class="w-100 "></a>
+                            <div class="col-8">
+                                <a href="#">
+                                    <h5>Rick Owens Foot Fetish Alpha</h5>
+                                </a>
+                                <p>Price: $140</p>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <a class="col-4" href="#"><img src="img/bestseller/bestseller7.jpg" alt=""
+                                    class="w-100 "></a>
+                            <div class="col-8">
+                                <a href="#">
+                                    <h5>Air Jordan No Retreat Clean</h5>
+                                </a>
+                                <p>Price: $170</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6  col-lg-4">
+                    <div class="row padding">
+                        <div class="col-12">
+                            <h2>Instagram Posts</h2>
+                        </div>
+                    </div>
+                    <hr class="light">
+                    <div class="row padding instagram-section">
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller1.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller2.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller3.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller4.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller5.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller6.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller7.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller9.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller8.jpg" class="w-100">
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="login.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

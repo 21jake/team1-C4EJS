@@ -72,20 +72,21 @@ img{
     height: 24px;
     border: none;
     border-radius: 4px;
+    margin-right: 2%;
 }
 
 .btn{
     display: block;
     width: 80px;
-    height: 80px;
-    margin: 20px auto;
+    height: 50px;
+    margin: 10px auto;
     background-color: rgba(255, 0, 0, 0.623);
     color: white;
     border: none;
     border-radius: 20px;
     font-size: 14px;
     font-weight: bold;  
-
+    padding: 0;
 }
 
 .btn:hover{
@@ -100,4 +101,15 @@ img{
     color: black;
     font-size: 14px;
     margin-bottom: 8px;
+}
+#signUpMess, #signUpMess2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+#alert {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    color: red;
 }

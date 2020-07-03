@@ -45,19 +45,25 @@
                         <a href="#trend-section" class="nav-link">Bestseller</a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
-
-                        </a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
                             <span class=" d-md-inline">View Cart</span>
                         </a>
                     </li>
+                    <li class="nav-item" id="cart-icon">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class=" d-md-inline">Log In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
+                        <a href="index.html" class="nav-link" title="Click here to log out">
+                            <i class="fas fa-sign-out-alt" ></i>
+                            <span class="d-md-inline" id="userIdentity"  ></span>
+                        </a>
+                    </li>
+                    
+
                 </ul>
             </div>
 
@@ -112,118 +118,6 @@
         </div>
     </div>
 
-    <!-- Best Seller Section -->
-
-    <!-- <div class="container-fluid padding bestseller-section">
-        <div class="row text-center">
-            <div class="col-12">
-                <h1 class="display-4">Our Bestsellers</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid padding ">
-        <div class="row padding card-section">
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller1.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Converse 1970s Sneakerz Freaks</h4>
-                        </a>
-                        <p class="card-text lead">Price: $120</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller2.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Adidas Allstar Heels Heaven</h4>
-                        </a>
-                        <p class="card-text lead">Price: $125</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller3.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Vans OldSchool Comfy Walk</h4>
-                        </a>
-                        <p class="card-text lead">Price: $200</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller4.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Classic Timberland Urban Design</h4>
-                        </a>
-                        <p class="card-text lead">Price: $140</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller7.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Air Jordan No Retreat Clean</h4>
-                        </a>
-                        <p class="card-text lead">Price: $140</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller5.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Adidas Stansmith Symptomps</h4>
-                        </a>
-                        <p class="card-text lead">Price: $135</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller6.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Rick Owens Foot Fetish Alpha</h4>
-                        </a>
-                        <p class="card-text lead">Price: $120</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller8.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h4 class="card-title">Nike Fairy Air Dream in Heels </h4>
-                        </a>
-                        <p class="card-text lead">Price: $145</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
     <!-- New Homepage template -->
 
     <!-- Welcome -->
@@ -250,7 +144,7 @@
             <div class="col-md-4 p-4">
                 <div class="row">
                     <div class="col-12">
-                        <h2>For Men</h2>
+                        <h2>For Man</h2>
                     </div>
                     <div class="col-12">
                         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate mollitia
@@ -260,7 +154,7 @@
 
                     </div>
 
-                    <a class="col-6 col-md-8" href="man.html" target="_blank"><button type="button" class=" btn btn-dark btn-lg">Visit Store for Men</button></a>
+                    <a class="col-6 col-md-8" href="man.html" target="_blank"><button type="button" class=" btn btn-dark btn-lg">Visit Store for Man</button></a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -331,7 +225,7 @@
             <div class="col-md-4 p-4">
                 <div class="row text-right">
                     <div class="col-12">
-                        <h2>...and Women</h2>
+                        <h2>...and Woman</h2>
                     </div>
                     <div class="col-12">
                         <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate mollitia
@@ -339,7 +233,7 @@
                             laudantium suscipit facere perferendis ratione voluptatum.</p>
                             <br>
                     </div>
-                    <a class="col-6 col-md-8 ml-auto" href="woman.html" target="_blanl"><button type="button" class=" btn-lg btn btn-danger ">Visit Store for Women</button></a>
+                    <a class="col-6 col-md-8 ml-auto" href="woman.html" target="_blanl"><button type="button" class=" btn-lg btn btn-danger ">Visit Store for Woman</button></a>
                 </div>
             </div>
 
@@ -551,7 +445,8 @@
 
 
 
-    <script src="app.js"></script>
+    
+    <script src="login.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
