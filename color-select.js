@@ -17,3 +17,4 @@ document.getElementById('yellow-color').addEventListener('click', function() {
 document.getElementById('blue-color-2').addEventListener('click', function() {
     mainImg.setAttribute('src',"img/man/man4-blue2.jpg")
 });
+
