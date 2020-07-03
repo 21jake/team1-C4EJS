@@ -47,17 +47,21 @@
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
-
-                        </a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
                             <span class=" d-md-inline">View Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="cart-icon">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class=" d-md-inline">Log In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
+                            <i class="fas fa-sign-out-alt" ></i>
+                            <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
                     </li>
                 </ul>
@@ -79,7 +83,7 @@
     <!-- End of Background image -->
 
 
-    <!-- New Arrival Section -->
+    <!-- Main Section -->
 
     <div class="container-fluid padding new-arrivals-section">
         <div class="row text-center">
@@ -96,7 +100,7 @@
                     <a href="#"><img src="img/sale/sale1.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">adidas Yeezy Boost 350 V2 Zebra</h4>
+                            <h4 class="card-title">Adidas Yeezy Boost 350 V2 Zebra</h4>
                         </a>
                         <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p>  $120</p>
                         <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
@@ -196,11 +200,11 @@
         <div class="row">
             <nav aria-label="Page navigation" class="col-12">
                 <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    <li class="page-item"><a class="page-link" href="sale.html">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="sale.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="sale2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="sale3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="sale2.html">Next</a></li>
                 </ul>
             </nav>
         </div>
@@ -313,7 +317,7 @@
 
 
 
-    <script src="app.js"></script>
+    <script src="login.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

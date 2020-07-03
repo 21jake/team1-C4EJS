@@ -47,17 +47,21 @@
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
-
-                        </a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
                             <span class=" d-md-inline">View Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="cart-icon">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class=" d-md-inline">Log In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
+                        <a href="man.html" class="nav-link" title="Click here to log out">
+                            <i class="fas fa-sign-out-alt" ></i>
+                            <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
                     </li>
                 </ul>
@@ -91,9 +95,9 @@
         <div class="row padding card-section">
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man1.jpg" alt="" class="w-100"></a>
+                    <a href="man1-detail.html"><img src="img/man/man1.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="man1-detail.html">
                             <h4 class="card-title">Jordan 3 Retro Varsity Royal Cement</h4>
                         </a>
                         <p class="card-text lead">Price: $180</p>
@@ -103,9 +107,9 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man2.jpg" alt="" class="w-100"></a>
+                    <a href="man2-detail.html"><img src="img/man/man2.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="man2-detail.html">
                             <h4 class="card-title">New Balance 990v5 Grey</h4>
                         </a>
                         <p class="card-text lead">Price: $135</p>
@@ -115,9 +119,9 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man3.jpg" alt="" class="w-100"></a>
+                    <a href="man3-detail.html"><img src="img/man/man3.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="man3-detail.html"">
                             <h4 class="card-title">Vans Sk8-Hi Black White</h4>
                         </a>
                         <p class="card-text lead">Price: $50</p>
@@ -127,9 +131,9 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man4.jpg" alt="" class="w-100"></a>
+                    <a href="detail.html"><img src="img/man/man4.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="detail.html">
                             <h4 class="card-title">Jordan 1 Retro High Zoom White</h4>
                         </a>
                         <p class="card-text lead">Price: $340</p>
@@ -139,9 +143,9 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man5.jpg" alt="" class="w-100"></a>
+                    <a href="man5-detail.html"><img src="img/man/man5.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="man5-detail.html">
                             <h4 class="card-title">adidas Ultra Boost 4.0 Running White</h4>
                         </a>
                         <p class="card-text lead">Price: $190</p>
@@ -151,9 +155,9 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man6.jpg" alt="" class="w-100"></a>
+                    <a href="man5-detail.html"><img src="img/man/man6.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="man6-detail.html">
                             <h4 class="card-title">adidas Yeezy Boost 700 V2 Blue</h4>
                         </a>
                         <p class="card-text lead">Price: $335</p>
@@ -163,9 +167,9 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man7.jpg" alt="" class="w-100"></a>
+                    <a href="man7-detail.html"><img src="img/man/man7.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="man8-detail.html">
                             <h4 class="card-title">adidas Human Race NMD Pharrell</h4>
                         </a>
                         <p class="card-text lead">Price: $550</p>
@@ -175,13 +179,13 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/man/man8.jpg" alt="" class="w-100"></a>
+                    <a href="man8-detail.html"><img src="img/man/man8.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
-                        <a href="#">
+                        <a href="man8-detail.html">
                             <h4 class="card-title">Vans Slip-On 98 DX Anaheim Factory</h4>
                         </a>
                         <p class="card-text lead">Price: $145</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <a href="man8-detail.html"><button type="button" class="btn btn-primary">Add to cart</button></a>
                     </div>
                 </div>
             </div>
@@ -317,7 +321,7 @@
 
 
 
-    <script src="app.js"></script>
+    <script src="login.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
