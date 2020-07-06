@@ -62,9 +62,17 @@
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
                     </li>
-                    
+                    <li>
+                        <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search items">
 
-                </ul>
+                        <ul id="items" style="display: none;">
+                            <li><a href="detail.html">Jordan 1</a></li>
+                            <li><a href="man1-detail.html">Jordan 3</a></li>
+                            <li><a href="man2-detail.html">New Balance</a></li>
+                            <li><a href="man3-detail.html">Vans Sk8-Hi</a></li>
+                        </ul>
+                    </li>
+               </ul>
             </div>
 
 
@@ -447,6 +455,7 @@
 
     
     <script src="login.js"></script>
+    <script src="search.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
