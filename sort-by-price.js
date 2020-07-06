@@ -56,6 +56,7 @@ function descFunction() {
 
 
 
+
 // productImgList[0].src = productArray[0].source
 // console.log(productArray[0].source)
 // console.log(productImgList[0].src)
