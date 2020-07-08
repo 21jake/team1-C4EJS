@@ -21,82 +21,95 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
 
-            <a href="index.html" > <img src="img/logo.jpg" alt="logo-image">
+            <a href="index.html"> <img src="img/logo.jpg" alt="logo-image">
 
-            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav-menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="nav-menu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="new-arrival.html" class="nav-link">New Arrivals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="man.html" class="nav-link">Man</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="woman.html" class="nav-link">Woman</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="sale.html" class="nav-link">SALE OFF</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="best-seller.html" class="nav-link">Bestseller</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="login.html" class="nav-link">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
+                <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="nav-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="new-arrival.html" class="nav-link">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="man.html" class="nav-link">Man</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="woman.html" class="nav-link">Woman</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="sale.html" class="nav-link">SALE OFF</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="best-seller.html" class="nav-link">Bestseller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span class=" d-md-inline">Log In</span>
 
-                        </a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" class="molad" id="cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        <span class=" d-md-inline">View Cart</span>
-                        </a>
-                        <div id="myModal" class="modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Giỏ Hàng</h5>
-                                    <span class="close">&times;</span>
-                                </div>
-                                
-                                <div class="modal-body">
-                                    <div class="cart-row">
-                                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
-                                        <span class="cart-price cart-header cart-column">Giá</span>
-                                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" class="molad" id="cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class=" d-md-inline">View Cart</span>
+                            </a>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Giỏ Hàng</h5>
+                                        <span class="close">&times;</span>
                                     </div>
-                                    <div class="cart-items">
-            
+
+                                    <div class="modal-body">
+                                        <div class="cart-row">
+                                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                            <span class="cart-price cart-header cart-column">Giá</span>
+                                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                        </div>
+                                        <div class="cart-items">
+
+                                        </div>
+                                        <div class="cart-total">
+                                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                                            <span class="cart-total-price">0VNĐ</span>
+                                        </div>
                                     </div>
-                                    <div class="cart-total">
-                                        <strong class="cart-total-title">Tổng Cộng:</strong>
-                                        <span class="cart-total-price">0VNĐ</span>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
                                     </div>
-                                </div>
-            
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="test-cart.html" target="_blank" class="nav-link">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class=" d-md-inline">View Cart</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link" id="main-cart" onclick="displayCart()">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class=" d-md-inline">View Cart</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
 
         </div>
     </nav>
 
-    
+
     <!-- Background image -->
-    <div class="bg row justify-content-center align-items-center padding" style="background-image: url(img/background-photo/background-newarrivals.jpeg);">
+    <div class="bg row justify-content-center align-items-center padding"
+        style="background-image: url(img/background-photo/background-newarrivals.jpeg);">
         <div class="css-typing col-md-6 ">
             <p>These are...</p>
             <p>our lastest and cutting edge</p>
@@ -112,6 +125,7 @@
         <div class="row text-center">
             <div class="col-12">
                 <h1 class="display-4">New Arrivals</h1>
+                <button type="button" class="btn btn-primary" onclick="test()">Test</button>
             </div>
         </div>
     </div>
@@ -120,13 +134,13 @@
         <div class="row padding card-section" id="list">
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img  src="img/newarrivals/na1.jpg" alt="" class="w-100 img"  ></a>
+                    <a href="#"><img src="img/newarrivals/na1.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
                             <h4 class="card-title name">Vans 1970s Immortal Treasure</h4>
                         </a>
-                        Price:<span class="card-text lead price"  >140$</span>
-                        <div href="#"><button type="button" class="btn btn-primary btn-cart" >Add to cart</button></div>
+                        Price:<span class="card-text lead price">140$</span>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
@@ -137,7 +151,7 @@
                         <a href="#">
                             <h4 class="card-title name">Low Achiles Classic Red</h4>
                         </a>
-                        Price: <span class="card-text lead price" >125$</span>
+                        Price: <span class="card-text lead price">125$</span>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -149,7 +163,7 @@
                         <a href="#">
                             <h4 class="card-title name">Air Jordan Chicago OG</h4>
                         </a>
-                        Price: <span class="card-text lead price" >200$</span>
+                        Price: <span class="card-text lead price">200$</span>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -161,7 +175,7 @@
                         <a href="#">
                             <h4 class="card-title name">Adidas x Supreme On Tour</h4>
                         </a>
-                        Price: <span class="card-text lead price" >140$</span>
+                        Price: <span class="card-text lead price">140$</span>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -173,7 +187,7 @@
                         <a href="#">
                             <h4 class="card-title name">Converse 1970s Sneakerz Freaks</h4>
                         </a>
-                        Price: <span class="card-text lead" >120$</span>
+                        Price: <span class="card-text lead">120$</span>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -185,7 +199,7 @@
                         <a href="#">
                             <h4 class="card-title name">Adidas Allstar Heels Heaven</h4>
                         </a>
-                        Price: <span class="card-text lead price" >125$</span>
+                        Price: <span class="card-text lead price">125$</span>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -197,7 +211,7 @@
                         <a href="#">
                             <h4 class="card-title name">Vans OldSchool Comfy Walk</h4>
                         </a>
-                        Price: <span class="card-text lead price" >200$</span>
+                        Price: <span class="card-text lead price">200$</span>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -209,7 +223,7 @@
                         <a href="#">
                             <h4 class="card-title name">Classic Timberland Urban Design</h4>
                         </a>
-                        Price: <span class="card-text lead price" >140$</span>
+                        Price: <span class="card-text lead price">140$</span>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -228,9 +242,9 @@
                     </li>
                     <li class="page-item active">
                         <span class="page-link">
-                        1
-                        <span class="sr-only">(current)</span>
-                      </span>
+                            1
+                            <span class="sr-only">(current)</span>
+                        </span>
                     </li>
                     <li class="page-item"><a class="page-link" href="new-arrival - page 2.html">2</a></li>
                     <li class="page-item"><a class="page-link" href="new-arrival - page 3.html">3</a></li>
