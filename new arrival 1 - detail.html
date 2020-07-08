@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Best Sellers</title>
+    <title>Detail</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f82ed006cc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-detail.css">
 </head>
 
 <body>
+
+
     <!-- Navigation bar -->
 
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -26,10 +29,7 @@
             </button>
             <div class="collapse navbar-collapse " id="nav-menu">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a href="new-arrival.html" class="nav-link">New Arrivals</a>
                     </li>
                     <li class="nav-item">
@@ -41,7 +41,7 @@
                     <li class="nav-item ">
                         <a href="sale.html" class="nav-link">SALE OFF</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
                     <li class="nav-item">
@@ -56,10 +56,10 @@
                             <span class=" d-md-inline">Log In</span>
                         </a>
                     </li>
-                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="best-seller.html" class="nav-link" title="Click here to log out">
+                    <li class="nav-item" id="logOutIcon">
+                        <a href="detail.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
-                            <span class="d-md-inline" id="userIdentity"  ></span>
+                            <span class="d-md-inline" id="userIdentity" onclick="logOut()"></span>
                         </a>
                     </li>
                 </ul>
@@ -68,142 +68,79 @@
         </div>
     </nav>
 
-    <!-- Background image -->
-    <div class="bg row justify-content-center align-items-start padding" style="background-image: url(img/background-photo/background-bestseller.jpeg);">
-        <div class="css-typing col-md-10 typedtext">
-            <div id="typedtext-bs"></div>
-        </div>
-    </div>
-    <!-- End of Background image -->
 
-    <!-- New Arrival Section -->
-
-    <div class="container-fluid padding new-arrivals-section">
-        <div class="row text-center">
-            <div class="col-12">
-                <h1 class="display-4">Best Sellers</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid padding new-arrivals-section">
-        <div class="row padding card-section">
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail1.html" target="_blank"><img src="img/bestseller/bestseller2/bestseller2-1.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail1.html">
-                            <h4 class="card-title">Converse 1970s</h4>
-                        </a>
-                        <p class="card-text lead">Price: $120</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail2.html" target="_blank"><img src="img/bestseller/bestseller2/bestseller2-2.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail2.html">
-                            <h4 class="card-title">Vans Old School</h4>
-                        </a>
-                        <p class="card-text lead">Price: $100</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail3.html" target="_blank"><img src="img/bestseller/bestseller2/man4.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail3.html">
-                            <h4 class="card-title">Air Jordan High Top </h4>
-                        </a>
-                        <p class="card-text lead">Price: $200</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail4.html"><img src="img/bestseller/bestseller2/bestseller2-4.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail4.html">
-                            <h4 class="card-title">Timberland 6 Inch Boot</h4>
-                        </a>
-                        <p class="card-text lead">Price: $420</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail5.html"><img src="img/bestseller/bestseller2/bestseller2-5.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail5.html">
-                            <h4 class="card-title">Air Jordan OG Chicago</h4>
-                        </a>
-                        <p class="card-text lead">Price: $140</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail6.html"><img src="img/bestseller/bestseller2/bestseller2-6.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail6.html">
-                            <h4 class="card-title">Nike Air Force Symptomps</h4>
-                        </a>
-                        <p class="card-text lead">Price: $135</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail7.html"><img src="img/bestseller/bestseller2/bestseller2-7.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail7.html">
-                            <h4 class="card-title" >Rick Owens Rush TripleD</h4>
-                        </a>
-                        <p class="card-text lead">Price: $120</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3">
-                <div class="card padding">
-                    <a href="best-seller-detail8.html"><img src="img/bestseller/bestseller2/bestseller2-8.jpg" alt="" class="w-100"></a>
-                    <div class="card-body">
-                        <a href="best-seller-detail8.html">
-                            <h4 class="card-title">Bitis Hunter Heavenly Feeling</h4>
-                        </a>
-                        <p class="card-text lead">Price: $145</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-     <!-- Pagination phân trang -->
-
-     <div class="container-fluid padding">
+    <!-- center -->
+    <div class="container">
         <div class="row">
-            <nav aria-label="Page navigation" class="col-12">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item "><a class="page-link" href="best-seller.html">Previous</a></li>
-                    <li class="page-item active"><a class="page-link" href="best-seller.html">1</a></li>
-                    <li class="page-item"><a class="page-link" href="best-seller2.html">2</a></li>
-                    <li class="page-item"><a class="page-link" href="best-seller3.html">3</a></li>
-                    <li class="page-item"><a class="page-link" href="best-seller2.html">Next</a></li>
-                </ul>
-            </nav>
+            <div class="col-md-8">
+                <img id="main-image" src="img/newarrivals/na detail/nad1.jpg" alt="" style="width: 80%; height:80%;">
+            </div>
+            <div class="col-md-4">
+                <h2>Nike Air Zoom Pegasus 37</h2>
+                <h2 style="margin-top: 20px;">$240</h2>
+                <p>Size</p>
+                <div class="size">
+                    <button type="button" class="btn btn-outline-secondary color-button">S</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">M</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">L</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">XL</button>
+                </div>
+                <p>Color</p>
+                <div class="color" id="">
+                    <button class="btn btn-primary" id="blue-color1_1"></button>
+                    <button class="btn btn-secondary" id="grey-color1_2"></button>
+                    <button class="btn btn-success" id="green-color1_3"></button>
+                    <button class="btn btn-danger" id="red-color1_4"></button>
+                    <button class="btn btn-warning" id="yellow-color1_5"></button>
+                    <button class="btn btn-info" id="blue-color1_6"> </button>
+                </div>
+                <p>Number</p>
+                <form>
+                    <select id="mySelect">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </form>
+                <script>
+                    function myFunction() {
+                        document.getElementById("mySelect").value = "Select";
+                       
+                    }
+                    var mainImg = document.getElementById('main-image');
+                    document.getElementById('blue-color1_1').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/newarrivals/na detail/nad1_1.jpg")
+                    });
+                    document.getElementById('grey-color1_2').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/newarrivals/na detail/nad1.jpg")
+                    });
+                    document.getElementById('green-color1_3').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/newarrivals/na detail/nad1_3.jpg")
+                    });
+                    document.getElementById('red-color1_4').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/newarrivals/na detail/nad1_4.jpg")
+                    });
+                    document.getElementById('yellow-color1_5').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/newarrivals/na detail/nad1_5.jpg")
+                    });
+                    document.getElementById('blue-color1_6').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/newarrivals/na detail/nad1_6.jpg")
+                    });
+
+                    
+                </script>
+                <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"
+                    onclick="window.location.href='index.html'">Add to Cart</button>
+                <p>- Đổi hàng trong vòng 72h <br>
+                    - Phí vận chuyển nội thành Hà Nội: 20.000đ <br>
+                    - Phí vận chuyển ngoại thành/ngoại tỉnh: 35.000 <br>
+                    - Thanh toán khi nhận hàng <br>
+                    - Không áp dụng đổi/trả cho sản phẩm khuyến mãi</p>
+            </div>
         </div>
     </div>
-
-
 
     <!-- Footer/About Us -->
 
@@ -309,10 +246,10 @@
     </footer>
 
 
-    <script src="sort-by-price.js"></script>
-    <script src="login.js"></script>
-    <script src="type-writter-bs.js"></script>
 
+
+    <script src="login.js"></script>
+    <script src="color-select.js"></script>
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
