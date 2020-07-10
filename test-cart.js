@@ -1,9 +1,9 @@
 id = 0;
 productList = document.getElementById("product-list");
 productArray = JSON.parse(localStorage.getItem("productList"));
-for (i = 0; i < productArray.length; i++) {
+for (i = 0; i <= productArray.length; i++) {
     title = productArray[i].productTitle
-    image = productArray[i].productIMg
+    image = productArray[i].productImg
     price = productArray[i].productPrice
 
     productData = `<li id=${id}>

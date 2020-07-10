@@ -467,3 +467,14 @@ footer a:hover {
     color: #333;
     font-size: 1.1em;
   }
+
+/*sdasds*/
+.product-list {
+    width: 45%;
+  }
+
+  .product-list-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+  }
