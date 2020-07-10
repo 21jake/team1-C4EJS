@@ -21,82 +21,126 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
 
-            <a href="index.html" > <img src="img/logo.jpg" alt="logo-image">
+            <a href="index.html"> <img src="img/logo.jpg" alt="logo-image">
 
-            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav-menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="nav-menu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="new-arrival.html" class="nav-link">New Arrivals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="man.html" class="nav-link">Man</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="woman.html" class="nav-link">Woman</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="sale.html" class="nav-link">SALE OFF</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="best-seller.html" class="nav-link">Bestseller</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="login.html" class="nav-link">
-                            <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
+                <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="nav-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="new-arrival.html" class="nav-link">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="man.html" class="nav-link">Man</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="woman.html" class="nav-link">Woman</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="sale.html" class="nav-link">SALE OFF</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="best-seller.html" class="nav-link">Bestseller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span class=" d-md-inline">Log In</span>
 
-                        </a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" class="molad" id="cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        <span class=" d-md-inline">View Cart</span>
-                        </a>
-                        <div id="myModal" class="modal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Giỏ Hàng</h5>
-                                    <span class="close">&times;</span>
-                                </div>
-                                
-                                <div class="modal-body">
-                                    <div class="cart-row">
-                                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
-                                        <span class="cart-price cart-header cart-column">Giá</span>
-                                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" class="molad" id="cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class=" d-md-inline">View Cart</span>
+                            </a>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Giỏ Hàng</h5>
+                                        <span class="close">&times;</span>
                                     </div>
-                                    <div class="cart-items">
-            
+
+                                    <div class="modal-body">
+                                        <div class="cart-row">
+                                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                            <span class="cart-price cart-header cart-column">Giá</span>
+                                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                        </div>
+                                        <div class="cart-items">
+
+                                        </div>
+                                        <div class="cart-total">
+                                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                                            <span class="cart-total-price">0VNĐ</span>
+                                        </div>
                                     </div>
-                                    <div class="cart-total">
-                                        <strong class="cart-total-title">Tổng Cộng:</strong>
-                                        <span class="cart-total-price">0VNĐ</span>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
                                     </div>
-                                </div>
-            
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="test-cart.html" target="_blank" class="nav-link">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class=" d-md-inline">View Cart</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link" id="main-cart" onclick="displayCart()">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class=" d-md-inline">View Cart</span>
+                            </a>
+                        </li> -->
+                        <li>
+                            <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search" style="margin-top: 5px; width: 150px;">
+    
+                            <ul id="items" style="display: none;">
+                                <li><a href="detail.html">Jordan 1</a></li>
+                                <li><a href="man1-detail.html">Jordan 3</a></li>
+                                <li><a href="man2-detail.html">New Balance</a></li>
+                                <li><a href="man3-detail.html">Vans Sk8-Hi</a></li>
+                                <li><a href="man5-detail.html">adidas Ultra Boost</a></li>
+                                <li><a href="man6-detail.html">adidas Yeezy Boost</a></li>
+                                <li><a href="man7-detail.html">adidas Human Race</a></li>
+                                <li><a href="man8-detail.html">Vans Slip-On 98</a></li>
+                                <li><a href="woman1-detail.html">Nike Air Force 1 </a></li>
+                                <li><a href="woman3-detail.html">Converse Chuck Taylor</a></li>
+                                <li><a href="woman4-detail.html">Nike Air Max 1/97</a></li>
+                                <li><a href="woman5-detail.html">>DAYMASTER SNEAKERS </a></li>
+                                <li><a href="best-seller-detail1.html">>Converse 1970s</a></li>
+                                <li><a href="best-seller-detail2.html">Vans Old School</a></li>
+                                <li><a href="best-seller-detail3.html">Air Jordan High Top</a></li>
+                                <li><a href="best-seller-detail4.html">Timberland 6 Inch Boot</a></li>
+                                <li><a href="best-seller-detail5.html">Air Jordan OG Chicago</a></li>
+                                <li><a href="best-seller-detail6.html">Nike Air Force Symptomps</a></li>
+                                <li><a href="new-arrival-detail1.html">Nike Air Zoom Pegasus 37</a></li>
+                                <li><a href="new-arrival-detail2.html">Nike Joyride Dual Run</a></li>
+                                <li><a href="new-arrival-detail3.html">ADDIDAS ULTRABOOST 20</a></li>
+                                <li><a href="new-arrival-detail4.html">BALENCIAGA SPEED</a></li>
+                                
+                            </ul>
+                        </li>
+                   </ul>
+                </div>
+                    </ul>
+                </div>
 
         </div>
     </nav>
 
-    
+
     <!-- Background image -->
-    <div class="bg row justify-content-center align-items-center padding" style="background-image: url(img/background-photo/background-newarrivals.jpeg);">
+    <div class="bg row justify-content-center align-items-center padding"
+        style="background-image: url(img/background-photo/background-newarrivals.jpeg);">
         <div class="css-typing col-md-6 ">
             <p>These are...</p>
             <p>our lastest and cutting edge</p>
@@ -130,13 +174,22 @@
         <div class="row padding card-section">
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
+<<<<<<< HEAD
                     <a href="new arrival 1 - detail.html" class="product-link"><img class="product-image w-100" src="img/newarrivals/na1.jpg" alt="" ></a>
+=======
+                    <a href="#"><img src="img/newarrivals/na1.jpg" alt="" class="w-100 img"></a>
+>>>>>>> 00381260eb753e7e6d82bef8d0bd04cf5e3997ef
                     <div class="card-body">
                         <a href="new arrival 1 - detail.html" class="product-link2">
                             <h4 class="card-title product-name">NIKE AIR ZOOM PEGASUS</h4>
                         </a>
+<<<<<<< HEAD
                         <p class="card-text lead">Price: $ <span class="price-tag">240</span> </p>
                         <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+=======
+                        Price:<span class="card-text lead price">140$</span>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
+>>>>>>> 00381260eb753e7e6d82bef8d0bd04cf5e3997ef
                     </div>
                 </div>
             </div>
@@ -239,9 +292,9 @@
                     </li>
                     <li class="page-item active">
                         <span class="page-link">
-                        1
-                        <span class="sr-only">(current)</span>
-                      </span>
+                            1
+                            <span class="sr-only">(current)</span>
+                        </span>
                     </li>
                     <li class="page-item"><a class="page-link" href="new-arrival - page 2.html">2</a></li>
                     <li class="page-item"><a class="page-link" href="new-arrival - page 3.html">3</a></li>
@@ -357,6 +410,7 @@
     
     <script src="sort-by-price.js"></script>
     <script src="login.js"></script>
+    <script src="search.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

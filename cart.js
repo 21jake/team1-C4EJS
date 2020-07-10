@@ -36,18 +36,20 @@ for (var i = 0; i < remove_cart.length; i++) {
 
 // update cart 
 function updatecart() {
-    var cart_item = document.getElementsByClassName("cart-items")[0];
-    var cart_rows = cart_item.getElementsByClassName("cart-row");
-    var total = 0;
-    for (var i = 0; i < cart_rows.length; i++) {
-      var cart_row = cart_rows[i]
-      var price_item = cart_row.getElementsByClassName("cart-price ")[0]
-      var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
-      var price = parseFloat(price_item.innerText)
-      var quantity = quantity_item.value 
-      total = total + (price * quantity)
-    }
-    document.getElementsByClassName("cart-total-price")[0].innerText = total
+  var cart_item = document.getElementsByClassName("cart-items")[0];
+  var cart_rows = cart_item.getElementsByClassName("cart-row");
+  var total = 0;
+  for (var i = 0; i < cart_rows.length; i++) {
+    var cart_row = cart_rows[i]
+    var price_item = cart_row.getElementsByClassName("cart-price ")[0]
+    var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
+    var price = parseFloat(price_item.innerText)
+    var quantity = quantity_item.value
+    total = total + (price * quantity)
+  }
+
+
+  document.getElementsByClassName("cart-total-price")[0].innerText = total;
 }
 
 // thay đổi số lượng sản phẩm
@@ -63,6 +65,7 @@ for (var i = 0; i < quantity_input.length; i++) {
   })
 }
 
+
 // Thêm vào giỏ
 var add_cart = document.getElementsByClassName("btn-cart");
 for (var i = 0; i < add_cart.length; i++) {
@@ -74,17 +77,58 @@ for (var i = 0; i < add_cart.length; i++) {
     var img = product.parentElement.getElementsByClassName("img")[0].src
     var title = product.getElementsByClassName("name")[0].innerText
     var price = product.getElementsByClassName("price")[0].innerText
+
+    //Thêm sản phẩm vào cart
     addItemToCart(title, price, img)
     updatecart()
+
+    //Thêm sản phẩm vào LocalStorage
+    let productObject = {
+      productIMg: img,
+      productTitle: title,
+      productPrice: price
+    }
+    if (localStorage.productList) {
+      productlistJS = JSON.parse(localStorage.getItem('productList'));
+    } else {
+      productlistJS = [];
+    }
+    productlistJS.push(productObject);
+    localStorage.setItem("productList", JSON.stringify(productlistJS));
   })
+
+
+  // productArray = JSON.parse(localStorage.getItem("productList"));
+  // console.log(productArray[0].productIMg);
+  // console.log(productArray[0].productTitle);
+  // console.log(productArray[0].productPrice);
+
+  // for (i = 0; i < productArray.length; i++) {
+  //   // var cartRowContents = `
+  //   // <div class="cart-item cart-column">
+  //   //     <img class="cart-item-image" src="${productArray[i].productIMg}" width="100" height="100">
+  //   //     <span class="cart-item-title">${productArray[i].productTitle}</span>
+  //   // </div>
+  //   // <span class="cart-price cart-column">${productPrice[i].productPrice}</span>
+  //   // <div class="cart-quantity cart-column">
+  //   //     <input class="cart-quantity-input" type="number" value="1">
+  //   //     <button class="btn btn-danger" type="button">Xóa</button>
+  //   // </div>`
+  //   console.log(productArray[i].productIMg);
+  //   console.log(productArray[i].productTitle);
+  //   console.log(productArray[i].productPrice);
+
+  // }
 }
+
+
 
 function addItemToCart(title, price, img) {
   var cartRow = document.createElement('div')
   cartRow.classList.add('cart-row')
   var cartItems = document.getElementsByClassName('cart-items')[0]
   var cart_title = cartItems.getElementsByClassName('cart-item-title')
-  
+
   for (var i = 0; i < cart_title.length; i++) {
     if (cart_title[i].innerText == title) {
       alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
@@ -101,6 +145,27 @@ function addItemToCart(title, price, img) {
       <input class="cart-quantity-input" type="number" value="1">
       <button class="btn btn-danger" type="button">Xóa</button>
   </div>`
+
+
+  // productArray = JSON.parse(localStorage.getItem("productList"));
+
+  // for (i = 0; i < productArray.length; i++) {
+  //   var cartRowContents = `
+  //   <div class="cart-item cart-column">
+  //       <img class="cart-item-image" src="${productArray[i].productIMg}" width="100" height="100">
+  //       <span class="cart-item-title">${productArray[i].productTitle}</span>
+  //   </div>
+  //   <span class="cart-price cart-column">${productArray[i].productPrice}</span>
+  //   <div class="cart-quantity cart-column">
+  //       <input class="cart-quantity-input" type="number" value="1">
+  //       <button class="btn btn-danger" type="button">Xóa</button>
+  //   </div>`
+  // }
+
+
+
+
+
   cartRow.innerHTML = cartRowContents
   cartItems.append(cartRow)
   cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
@@ -116,3 +181,13 @@ function addItemToCart(title, price, img) {
     updatecart()
   })
 }
+
+// function test() {
+//   productArray = JSON.parse(localStorage.getItem("productList"));
+//   for (i = 0; i < productArray.length; i++) {
+//     console.log(productArray[i].productIMg);
+//     console.log(productArray[i].productTitle);
+//     console.log(productArray[i].productPrice);
+//   }
+// }
+// console.log("a");
