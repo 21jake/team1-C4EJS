@@ -84,7 +84,7 @@ for (var i = 0; i < add_cart.length; i++) {
 
     //Thêm sản phẩm vào LocalStorage
     let productObject = {
-      productIMg: img,
+      productImg: img,
       productTitle: title,
       productPrice: price
     }
@@ -191,3 +191,33 @@ function addItemToCart(title, price, img) {
 //   }
 // }
 // console.log("a");
+
+//sessionStorage
+id = 0;
+productList = document.getElementById("product-list");
+productArray = JSON.parse(localStorage.getItem("productList"));
+for (i = 0; i <= productArray.length; i++) {
+    title = productArray[i].productTitle
+    img = productArray[i].productImg
+    price = productArray[i].productPrice
+
+    productData = `<div id=${id}>
+    <div class="cart-item cart-column">
+      <img class="cart-item-image" src=${img}  style="width: 100px; height: 100px;">
+      <span class="cart-item-title">${title}</span>
+    </div>
+    <span class="cart-price cart-column">${price}</span>
+    <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1">
+      <button class="btn btn-danger" onclick="remove(${id})">Delete</button>
+    </div>`
+    productList.innerHTML += productData;
+    id++;
+}
+function remove(id) {
+    document.getElementById(id).remove();
+    productArray.splice(id,1);
+    localStorage.setItem('productList', JSON.stringify(productArray))
+
+}
+
