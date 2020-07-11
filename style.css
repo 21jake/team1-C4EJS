@@ -467,3 +467,14 @@ footer a:hover {
     color: #333;
     font-size: 1.1em;
   }
+
+  #searchInput{
+      border: none;
+      border-radius: 10px;
+      
+      background-color: #dfdfdf ;
+      padding:10px ;
+  }
+  #searchBar{
+    margin-top: -7px;
+  }
