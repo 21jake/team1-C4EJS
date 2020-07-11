@@ -47,13 +47,13 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class=" d-md-inline">View Cart</span>
+                            <span class="d-none d-xl-inline">View Cart</span>
                         </a>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
                             <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
+                            <span class=" d-none d-xl-inline">Log In</span>
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
@@ -62,7 +62,7 @@
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
                     </li>
-                    <li id="searchBar">
+                    <li class="nav-item" id="search-bar">
                         <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search" style="margin-top: 5px; width: 150px;">
 
                         <ul id="items" style="display: none;">

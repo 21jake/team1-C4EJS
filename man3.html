@@ -18,6 +18,7 @@
 <body>
     <!-- Navigation bar -->
 
+
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
 
@@ -28,14 +29,11 @@
             </button>
             <div class="collapse navbar-collapse " id="nav-menu">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
                     <li class="nav-item ">
                         <a href="new-arrival.html" class="nav-link">New Arrivals</a>
                     </li>
-                    <li class="nav-item active">
-                        <a href="man.html" class="nav-link">Man</a>
+                    <li class="nav-item">
+                        <a href="man.html active" class="nav-link">Man</a>
                     </li>
                     <li class="nav-item ">
                         <a href="woman.html" class="nav-link">Woman</a>
@@ -49,22 +47,22 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class=" d-md-inline">View Cart</span>
+                            <span class="d-none d-xl-inline">View Cart</span>
                         </a>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
                             <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
+                            <span class=" d-none d-xl-inline">Log In</span>
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="man3.html" class="nav-link" title="Click here to log out">
+                        <a href="index.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
                     </li>
-                    <li id="searchBar">
+                    <li class="nav-item" id="search-bar">
                         <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search" style="margin-top: 5px; width: 150px;">
 
                         <ul id="items" style="display: none;">
@@ -100,17 +98,6 @@
 
         </div>
     </nav>
-
-    <!-- Background image -->
-    <div class="bg row justify-content-center align-items-center padding" style="background-image: url(img/background-photo/background-man.jpeg);">
-        <div class="css-typing col-md-6 ">
-            <p>We are not</p>
-            <p>simply a footwear company</p>
-            <p>We are the Future</p>
-        </div>
-    </div>
-
-    <!-- End of Background image -->
 
 
     <div class="container-fluid padding new-arrivals-section">
@@ -231,14 +218,8 @@
                     <li class="page-item"><a class="page-link" href="man2.html">Previous</a></li>
                     <li class="page-item"><a class="page-link" href="man.html">1</a></li>
                     <li class="page-item"><a class="page-link" href="man2.html">2</a></li>
-                    <li class="page-item active">
-                        <span class="page-link">
-                        3
-                        <span class="sr-only">(current)</span>
-                      </span>
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Next</a>
-                    </li>
+                    <li class="page-item active"><a class="page-link" href="man3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
                 </ul>
             </nav>
         </div>

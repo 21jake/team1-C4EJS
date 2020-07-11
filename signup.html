@@ -11,17 +11,19 @@
         <img src="img/logo.jpg" alt="">
         <h1>Sign Up</h1>
         <div class="text">
-            <input type="text" placeholder="Username" id="newUsername">
+            <input type="text" placeholder="Username" id="newUsername" title="Must be at least 8 characters">
             
         </div>
         <div class="text">
-            <input type="password" placeholder="Password" id="newPassword">
+            <input type="password" placeholder="Password" id="newPassword" title="Must be at least 8 characters">
 
         </div>
     
         <button class="btn" onclick="signUp()">Confirm</button>
         
+        <h4></h4>
         <h2 id="signUpMess"></h2>
+        <h2 id="signUpMessError" style="color: red; font-style: italic; font-weight: 200; text-align: center;" ></h2>
         <h4 id="signUpMess2" style="display: none;"> You will be directed to the login page</h4>
 
     </div>    
