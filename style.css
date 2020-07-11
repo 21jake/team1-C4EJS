@@ -55,7 +55,7 @@ a:hover {
 .carousel-caption button {
     font-size: 200%;
     margin: 1rem;
-    margin-top: 40%;
+    margin-top: 30%;
     padding: 1%;
 }
 
@@ -174,6 +174,12 @@ footer a:hover {
 /* Login/Logout/SignUp */
 
 @media (max-width: 992px) {
+    .typedtext {
+        font-size: 1.9rem;
+    }
+    #search-bar {
+        display: none;
+    }
     .carousel-caption {
         position: absolute;
         top: 45%;
@@ -201,12 +207,11 @@ footer a:hover {
     .bestseller-section h1 {
         font-size: 250%;
     }
+
 }
 
 @media (max-width: 768px) {
-    .bg {
-        display: none;
-    }
+    
     .welcome p.lead {
         font-size: 1.2rem;
     }
@@ -239,7 +244,7 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
-
+ 
     .welcome p.lead {
         font-size: 1rem;
     }
@@ -264,6 +269,7 @@ footer a:hover {
     .carousel-caption h3 {
         margin: 1rem;
         font-size: 100%;
+        display: none;
     }
     .bestseller-section h1 {
         font-size: 190%;
@@ -271,8 +277,36 @@ footer a:hover {
     footer {
         font-size: 1rem;
     }
+    .for-man .btn, .for-woman .btn {
+        white-space: normal;
+    }
+    #sale-section {
+        height: 70%;
+        display: block;
+    }
 }
+@media (max-width: 376px) {
+    #slides {
+        display: none;
+    }
+    .welcome p.lead {
+        font-size: 0.9rem;
+    }
+    .welcome {
+        margin-top: 30%;
+    }
+    .welcome > div > div > h1 {
+        font-size: 200%;
+    }
 
+    .lastest-product .lead, .trending-product .lead {
+        font-size: 1rem;
+    }
+    .sale-section {
+        display: none;
+    }
+
+}
 .sale {
     text-decoration: line-through;
     color: #9d9d9d;

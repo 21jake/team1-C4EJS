@@ -1,7 +1,8 @@
+/* Man page effect */
 .css-typing p {
     border-right: .15em solid orange;
     font-family: "Courier";
-    font-size: 3rem;
+    font-size: 2.2rem;
     white-space: nowrap;
     overflow: hidden;
     font-weight: 700;
@@ -12,7 +13,7 @@
 .css-typing-2 p {
     border-right: .15em solid white;
     font-family: "Courier";
-    font-size: 3rem;
+    font-size: 2.3rem;
     white-space: nowrap;
     overflow: hidden;
     font-weight: 700;
@@ -22,7 +23,7 @@
 }
 
 .css-typing p:nth-child(1) {
-    width: 7.3em;
+    width: 6em;
     -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;
@@ -30,7 +31,7 @@
 }
 
 .css-typing p:nth-child(2) {
-    width: 17.5em;
+    width: 16.8em;
     opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
     animation: type2 2s steps(40, end);
@@ -192,5 +193,20 @@
 @-webkit-keyframes blink {
     50% {
         border-color: tranparent;
+    }
+}
+/* Responsive Typewritte effect để tránh overflow */
+@media (max-width: 992px) {
+    .css-typing p {
+        font-size: 1.8rem;
+    }
+    
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+    .bg {
+        display: none;
     }
 }
