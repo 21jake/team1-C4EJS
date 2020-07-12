@@ -2,14 +2,39 @@
 function signUp() {
     let newUsername = document.getElementById('newUsername').value;
     let newPassword = document.getElementById('newPassword').value;
+    let usernameArray = [];
 
-    let newUser = {
-        name: newUsername,
-        password: newPassword
+    if (localStorage.userList) {
+        let ExistingUserArray = JSON.parse(localStorage.getItem("userList"));
+        for (i = 0; i < ExistingUserArray.length; i++) {
+            existingUsername = ExistingUserArray[i].name;
+            usernameArray.push(existingUsername);
+        }
     }
+
+    
+
+    if (newUsername == "" || newPassword == "") {
+        document.getElementById('signUpMessError').innerHTML = ""
+        document.getElementById('signUpMessError').innerHTML = "Invalid name or password! <br>"
+    } else if (newUsername.length < 8 || newPassword.length < 8) {
+        document.getElementById('signUpMessError').innerHTML = ""
+        document.getElementById('signUpMessError').innerHTML = "Username and password must be at least 8 characters"
+    } else if (usernameArray.includes(newUsername)) {
+        document.getElementById('signUpMessError').innerHTML = ""
+        document.getElementById('signUpMessError').innerHTML = "Username already taken"
+    } else {
+        window.newUser = {
+            name: newUsername,
+            password: newPassword
+        }
+        document.getElementById('signUpMessError').innerHTML = ""
+    }
+
 
     if (localStorage.userList) {
         userJS = JSON.parse(localStorage.getItem('userList'));
+
     } else {
         userJS = [];
     }
@@ -22,6 +47,7 @@ function signUp() {
     document.getElementById('signUpMess').innerHTML = "Successfully Registered! <br>"
     document.getElementById("signUpMess2").style.color = "grey"
     document.getElementById("signUpMess2").style.display = "block"
+
 
     setTimeout(function () {
         window.location.href = "login.html";
@@ -44,7 +70,7 @@ function logIn() {
             document.getElementById('alert').innerHTML = "You will be redirected to the homepage"
             logedUsername = userArray[i].name;
             localStorage.setItem('logedUsername', logedUsername);
-            
+
         }
         else {
             document.getElementById('alert').style.display = "block";

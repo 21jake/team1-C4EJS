@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 html, body {
@@ -56,7 +55,7 @@ a:hover {
 .carousel-caption button {
     font-size: 200%;
     margin: 1rem;
-    margin-top: 40%;
+    margin-top: 30%;
     padding: 1%;
 }
 
@@ -85,77 +84,102 @@ footer a:hover {
 .instagram-section a {
     padding-bottom: 1.5rem;
 }
+
 .bestseller-section h1 {
     font-size: 350%;
 }
+
 .carousel-inner .btn-dark {
     margin-top: 10% !important;
 }
+
 .carousel-item input {
-    padding:  2% 3%;
+    padding: 2% 3%;
     font-size: 1.2rem;
 }
+
 /* Background image */
+
 .bg {
+    width: 100%;
     height: 100%;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 3%;
-    
 }
+
 /* Typewriter effect woman */
+
 .typedtext {
-    font-family: 'Waiting for the Sunrise', cursive; 
-    font-size: 2.5rem; 
-    margin: 10px 50px; 
-    letter-spacing: 6px; 
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 2.5rem;
+    margin: 10px 50px;
+    letter-spacing: 6px;
     font-weight: bold;
     color: white;
 }
+
 /* New homepage template css */
+
 .sample-img img {
     max-width: 100%;
 }
+
 .sample-img img:hover {
     transform: scale(1.1);
     transition: transform .5 ease;
 }
+
 .sample-img {
     overflow: hidden;
 }
+
 .welcome hr, .for-man hr, .for-woman hr {
     border: 2px solid #b4b4b4;
     width: 100%;
     margin: 1rem;
 }
+
 .for-man hr, .for-woman hr {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-
 }
-.row.no-padding > div{
+
+.row.no-padding>div {
     padding: 0;
 }
-.sale-top span{
+
+.sale-top span {
     font-weight: normal;
     color: #3d3d3d;
 }
+
 .sale-top h1 {
     letter-spacing: 1px;
     font-size: 4rem;
 }
+
 .sale-bot h1 {
     font-size: 3.5rem;
     color: black;
 }
+
 .sale-bot span {
     font-size: 2rem;
     color: #3d3d3d;
 }
+
 /* Login/Logout/SignUp */
+
 @media (max-width: 992px) {
+    .typedtext {
+        font-size: 1.9rem;
+    }
+    #search-bar {
+        display: none;
+    }
     .carousel-caption {
         position: absolute;
         top: 45%;
@@ -164,19 +188,16 @@ footer a:hover {
     .carousel-caption h1 {
         text-shadow: 1px 1px 15px black;
         font-size: 300%;
-        margin: 0.5rem; 
+        margin: 0.5rem;
     }
-    
     .carousel-caption h3 {
         margin: 1rem;
         font-size: 200%;
     }
-    
     .carousel-caption button {
         font-size: 140%;
         margin-top: 27%;
     }
-
     footer {
         font-size: 1.2rem;
     }
@@ -186,10 +207,11 @@ footer a:hover {
     .bestseller-section h1 {
         font-size: 250%;
     }
-   
+
 }
 
 @media (max-width: 768px) {
+    
     .welcome p.lead {
         font-size: 1.2rem;
     }
@@ -201,7 +223,6 @@ footer a:hover {
     }
     .carousel-caption {
         position: absolute;
-        
         transform: translateY(-50%);
     }
     .carousel-caption h1 {
@@ -209,13 +230,10 @@ footer a:hover {
         font-size: 230%;
         margin: 0.3rem;
     }
-    
     .carousel-caption h3 {
         margin: 1rem;
         font-size: 130%;
     }
-    
-    
     .carousel-caption button {
         font-size: 90%;
         margin-top: 20%;
@@ -226,6 +244,7 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
+ 
     .welcome p.lead {
         font-size: 1rem;
     }
@@ -237,9 +256,7 @@ footer a:hover {
     }
     .sale-section span {
         font-size: 1.2rem;
-
     }
-
     .carousel-caption button {
         font-size: 90%;
         margin-top: 20%;
@@ -252,6 +269,7 @@ footer a:hover {
     .carousel-caption h3 {
         margin: 1rem;
         font-size: 100%;
+        display: none;
     }
     .bestseller-section h1 {
         font-size: 190%;
@@ -259,13 +277,43 @@ footer a:hover {
     footer {
         font-size: 1rem;
     }
+    .for-man .btn, .for-woman .btn {
+        white-space: normal;
+    }
+    #sale-section {
+        height: 70%;
+        display: block;
+    }
 }
-.sale{
+@media (max-width: 376px) {
+    #slides {
+        display: none;
+    }
+    .welcome p.lead {
+        font-size: 0.9rem;
+    }
+    .welcome {
+        margin-top: 30%;
+    }
+    .welcome > div > div > h1 {
+        font-size: 200%;
+    }
+
+    .lastest-product .lead, .trending-product .lead {
+        font-size: 1rem;
+    }
+    .sale-section {
+        display: none;
+    }
+
+}
+.sale {
     text-decoration: line-through;
     color: #9d9d9d;
 }
 
 /* modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -278,9 +326,9 @@ footer a:hover {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     margin: 0 auto;
     width: 50%;
     position: relative;
@@ -291,14 +339,13 @@ footer a:hover {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: .3rem;
     outline: 0;
-  
-  }
-  
-  .modal-body {
+}
+
+.modal-body {
     padding: 1rem;
-  }
-  
-  .modal-footer {
+}
+
+.modal-footer {
     display: flex;
     border-top: 1px solid #aaaaaa;
     padding: 1rem;
@@ -306,13 +353,13 @@ footer a:hover {
     justify-content: flex-end;
     border-top: 1px solid #aaaaaa;
     padding: 1rem;
-  }
-  
-  .modal-footer>:not(:first-child) {
+}
+
+.modal-footer>:not(:first-child) {
     margin-left: .25rem;
-  }
-  
-  .btn {
+}
+
+.btn {
     cursor: pointer;
     outline: none;
     font-weight: 400;
@@ -325,111 +372,111 @@ footer a:hover {
     font-size: 1rem;
     border-radius: .25rem;
     transition: all .2s ease-in-out;
-  }
-  
-  .btn-secondary {
+}
+
+.btn-secondary {
     color: #292b2c;
     background-color: #fff;
     border-color: #ccc;
-  }
-  
-  .btn-primary {
+}
+
+.btn-primary {
     color: #fff;
     background-color: #0275d8;
     border-color: #0275d8;
-  }
-  
-  .modal-header {
+}
+
+.modal-header {
     align-items: center;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #aaaaaa;
     padding: 1rem;
-  }
-  
-  h5.modal-title {
+}
+
+h5.modal-title {
     font-size: 1.5rem;
-  }
-  
-  .close {
+}
+
+.close {
     color: #aaaaaa;
     font-size: 28px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover, .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
- 
-  #cart:hover {
-    border-color: #fff;
-  }
+}
 
-  /* cart */
+#cart:hover {
+    border-color: #fff;
+}
+
+/* cart */
+
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
     color: #333;
-  }
-  
-  .cart-column {
+}
+
+.cart-column {
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
     margin-right: 1.5em;
     padding-bottom: 10px;
     margin-top: 10px;
-  }
-  
-  .cart-row {
+}
+
+.cart-row {
     display: flex;
-  }
-  
-  .cart-item {
+}
+
+.cart-item {
     width: 45%;
-  }
-  
-  .cart-price {
+}
+
+.cart-price {
     width: 20%;
     font-size: 1.2em;
     color: #333;
-  }
-  
-  .cart-quantity {
+}
+
+.cart-quantity {
     width: 35%;
-  }
-  
-  .cart-item-title {
+}
+
+.cart-item-title {
     color: #333;
     margin-left: .5em;
     font-size: 1.2em;
-  }
-  
-  .cart-item-image {
+}
+
+.cart-item-image {
     width: 75px;
     height: auto;
     border-radius: 10px;
-  }
-  
-  .btn-danger {
+}
+
+.btn-danger {
     color: white;
     background-color: #EB5757;
     border: none;
     border-radius: .3em;
     font-weight: bold;
-  }
-  
-  .btn-danger:hover {
+}
+
+.btn-danger:hover {
     background-color: #CC4C4C;
-  }
-  
-  .cart-quantity-input {
+}
+
+.cart-quantity-input {
     height: 34px;
     width: 50px;
     border-radius: 5px;
@@ -440,30 +487,41 @@ footer a:hover {
     text-align: center;
     font-size: 1.2em;
     margin-right: 25px;
-  }
-  
-  .cart-row:last-child {
+}
+
+.cart-row:last-child {
     border-bottom: 1px solid black;
-  }
-  
-  .cart-row:last-child .cart-column {
+}
+
+.cart-row:last-child .cart-column {
     border: none;
-  }
-  
-  .cart-total {
+}
+
+.cart-total {
     text-align: end;
     margin-top: 10px;
     margin-right: 10px;
-  }
-  
-  .cart-total-title {
+}
+
+.cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
     color: black;
     margin-right: 20px;
-  }
-  
-  .cart-total-price {
+}
+
+.cart-total-price {
     color: #333;
     font-size: 1.1em;
+  }
+
+/*sdasds*/
+.product-list {
+    width: 45%;
+  }
+
+  .product-list-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
   }

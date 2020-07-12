@@ -49,22 +49,22 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class=" d-md-inline">View Cart</span>
+                            <span class="d-none d-xl-inline">View Cart</span>
                         </a>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
                             <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
+                            <span class=" d-none d-xl-inline">Log In</span>
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="man.html" class="nav-link" title="Click here to log out">
+                        <a href="index.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item" id="search-bar">
                         <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search" style="margin-top: 5px; width: 150px;">
 
                         <ul id="items" style="display: none;">
@@ -153,7 +153,7 @@
                     <a href="man2-detail.html" class="product-link"><img class="product-image w-100" src="img/man/man2.jpg" alt="" ></a>
                     <div class="card-body">
                         <a href="man2-detail.html" class="product-link2">
-                            <h4 class="card-title product-name">New Balance 990v5 Grey</h4>
+                            <h4 class="card-title product-name"> <br> New Balance 990v5 Grey</h4>
                         </a>
                         <p class="card-text lead">Price: $<span class="price-tag">135</span></p>
                         <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
@@ -165,7 +165,7 @@
                     <a href="man3-detail.html" class="product-link"><img class="product-image w-100" src="img/man/man3.jpg" alt="" class="w-100"></a>
                     <div class="card-body">
                         <a href="man3-detail.html" class="product-link2">
-                            <h4 class="card-title product-name">Vans Sk8-Hi Black White</h4>
+                            <h4 class="card-title product-name"> <br> Vans Sk8-Hi Black White</h4>
                         </a>
                         <p class="card-text lead">Price: $<span class="price-tag">50</span></p>
                         <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
@@ -241,15 +241,8 @@
         <div class="row">
             <nav aria-label="Page navigation" class="col-12">
                 <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item active">
-                        <span class="page-link">
-                        1
-                        <span class="sr-only">(current)</span>
-                      </span>
-                    </li>
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="man.html">1</a></li>
                     <li class="page-item"><a class="page-link" href="man2.html">2</a></li>
                     <li class="page-item"><a class="page-link" href="man3.html">3</a></li>
                     <li class="page-item"><a class="page-link" href="man2.html">Next</a></li>

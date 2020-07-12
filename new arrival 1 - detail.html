@@ -47,22 +47,22 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class=" d-md-inline">View Cart</span>
+                            <span class="d-none d-xl-inline">View Cart</span>
                         </a>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
                             <i class="fas fa-sign-in-alt"></i>
-                            <span class=" d-md-inline">Log In</span>
+                            <span class=" d-none d-xl-inline">Log In</span>
                         </a>
                     </li>
-                    <li class="nav-item" id="logOutIcon">
-                        <a href="detail.html" class="nav-link" title="Click here to log out">
+                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
+                        <a href="index.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
-                            <span class="d-md-inline" id="userIdentity" onclick="logOut()"></span>
+                            <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item" id="search-bar">
                         <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search" style="margin-top: 5px; width: 150px;">
 
                         <ul id="items" style="display: none;">
@@ -164,11 +164,11 @@
                 </script>
                 <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"
                     onclick="window.location.href='index.html'">Add to Cart</button>
-                <p>- Đổi hàng trong vòng 72h <br>
-                    - Phí vận chuyển nội thành Hà Nội: 20.000đ <br>
-                    - Phí vận chuyển ngoại thành/ngoại tỉnh: 35.000 <br>
-                    - Thanh toán khi nhận hàng <br>
-                    - Không áp dụng đổi/trả cho sản phẩm khuyến mãi</p>
+                    <p>-72 hours Return/Exchange policy <br>
+                        -Standard shipping fee: 35.000 VND <br>
+                        -Shipping fee within Hanoi: 20.000 VND <br>
+                        -Cash on Delivery <br>
+                        -Return/Exchange policy does not apply for on-sale products</p>
             </div>
         </div>
     </div>
