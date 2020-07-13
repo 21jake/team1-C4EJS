@@ -14,6 +14,7 @@ for (i = 0; i < productArray.length; i++) {
             <span>${title}</span>
             <span>${price}</span>
             <button onclick="remove(${id})">Delete</button>
+            
         </li>`
     productList.innerHTML += productData;
     id++;
