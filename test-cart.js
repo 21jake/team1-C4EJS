@@ -16,6 +16,14 @@ for (i = 0; i < productArray.length; i++) {
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
+            <form>
+            <select id="sizeSelect" class="mr-3">
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+                <option value="4">XL</option>
+            </select>
+        </form>
             <button class="btn btn-danger" onclick="remove(${id})">Delete</button>
         </div>
         </div>`

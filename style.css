@@ -481,7 +481,7 @@ h5.modal-title {
     background-color: #CC4C4C;
 }
 
-.cart-quantity-input {
+.cart-quantity-input, #sizeSelect {
     height: 34px;
     width: 50px;
     border-radius: 5px;
