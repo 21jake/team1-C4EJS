@@ -528,3 +528,14 @@ h5.modal-title {
     margin-left: .5em;
     font-size: 1.2em;
   }
+#nav-menu ul li{
+    position: relative;
+}
+
+#nav-menu ul li ul {
+    position: absolute;
+}
+#nav-menu ul li ul {
+    background-color: white;
+    color: black;
+}
