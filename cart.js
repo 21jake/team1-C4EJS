@@ -97,28 +97,6 @@ for (var i = 0; i < add_cart.length; i++) {
     localStorage.setItem("productList", JSON.stringify(productlistJS));
   })
 
-
-  // productArray = JSON.parse(localStorage.getItem("productList"));
-  // console.log(productArray[0].productIMg);
-  // console.log(productArray[0].productTitle);
-  // console.log(productArray[0].productPrice);
-
-  // for (i = 0; i < productArray.length; i++) {
-  //   // var cartRowContents = `
-  //   // <div class="cart-item cart-column">
-  //   //     <img class="cart-item-image" src="${productArray[i].productIMg}" width="100" height="100">
-  //   //     <span class="cart-item-title">${productArray[i].productTitle}</span>
-  //   // </div>
-  //   // <span class="cart-price cart-column">${productPrice[i].productPrice}</span>
-  //   // <div class="cart-quantity cart-column">
-  //   //     <input class="cart-quantity-input" type="number" value="1">
-  //   //     <button class="btn btn-danger" type="button">Xóa</button>
-  //   // </div>`
-  //   console.log(productArray[i].productIMg);
-  //   console.log(productArray[i].productTitle);
-  //   console.log(productArray[i].productPrice);
-
-  // }
 }
 
 
@@ -147,20 +125,7 @@ function addItemToCart(title, price, img) {
   </div>`
 
 
-  // productArray = JSON.parse(localStorage.getItem("productList"));
 
-  // for (i = 0; i < productArray.length; i++) {
-  //   var cartRowContents = `
-  //   <div class="cart-item cart-column">
-  //       <img class="cart-item-image" src="${productArray[i].productIMg}" width="100" height="100">
-  //       <span class="cart-item-title">${productArray[i].productTitle}</span>
-  //   </div>
-  //   <span class="cart-price cart-column">${productArray[i].productPrice}</span>
-  //   <div class="cart-quantity cart-column">
-  //       <input class="cart-quantity-input" type="number" value="1">
-  //       <button class="btn btn-danger" type="button">Xóa</button>
-  //   </div>`
-  // }
 
 
 
@@ -182,42 +147,5 @@ function addItemToCart(title, price, img) {
   })
 }
 
-// function test() {
-//   productArray = JSON.parse(localStorage.getItem("productList"));
-//   for (i = 0; i < productArray.length; i++) {
-//     console.log(productArray[i].productIMg);
-//     console.log(productArray[i].productTitle);
-//     console.log(productArray[i].productPrice);
-//   }
-// }
-// console.log("a");
 
-//sessionStorage
-id = 0;
-productList = document.getElementById("product-list");
-productArray = JSON.parse(localStorage.getItem("productList"));
-for (i = 0; i <= productArray.length; i++) {
-    title = productArray[i].productTitle
-    img = productArray[i].productImg
-    price = productArray[i].productPrice
-
-    productData = `<div id=${id}>
-    <div class="cart-item cart-column">
-      <img class="cart-item-image" src=${img}  style="width: 100px; height: 100px;">
-      <span class="cart-item-title">${title}</span>
-    </div>
-    <span class="cart-price cart-column">${price}</span>
-    <div class="cart-quantity cart-column">
-      <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" onclick="remove(${id})">Delete</button>
-    </div>`
-    productList.innerHTML += productData;
-    id++;
-}
-function remove(id) {
-    document.getElementById(id).remove();
-    productArray.splice(id,1);
-    localStorage.setItem('productList', JSON.stringify(productArray))
-
-}
 
