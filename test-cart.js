@@ -7,6 +7,7 @@ for (i = 0; i < productArray.length; i++) {
     title = productArray[i].productTitle
     image = productArray[i].productImg
     price = productArray[i].productPrice
+<<<<<<< HEAD
 
     productData = `<li id=${id}>
         <span>${id}</span>
@@ -16,6 +17,28 @@ for (i = 0; i < productArray.length; i++) {
             <button onclick="remove(${id})">Delete</button>
             
         </li>`
+=======
+    productData = `<div id=${id}> 
+        <div class="cart-row">
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src=${image}  style="width: 100; height: 100;">
+            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <form>
+            <select id="sizeSelect" class="mr-3">
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+                <option value="4">XL</option>
+            </select>
+        </form>
+            <button class="btn btn-danger" onclick="remove(${id})">Delete</button>
+        </div>
+        </div>`
+>>>>>>> master
     productList.innerHTML += productData;
     id++;
 }
