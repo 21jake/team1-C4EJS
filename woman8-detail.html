@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Detail</title>
+    <title id="product-page-title">Detail</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -47,11 +47,47 @@
                     <li class="nav-item ">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
+                    <li class="nav-item" onclick="refresh()">
+                        <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="d-none d-xl-inline">View Cart</span>
+                            <span class=" d-md-inline">View Cart</span>
                         </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cart</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column ">Product</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
+                                        <span class="cart-quantity cart-header cart-column ">Piece</span>
+                                    </div>
+
+
+                                    <div id="product-list">
+
+                                    </div>
+
+                                    <div class="cart-items">
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                                    <button type="button" class="btn btn-primary order">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
@@ -60,7 +96,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="index.html" class="nav-link" title="Click here to log out">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
@@ -107,11 +143,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <img id="main-image" src="img/woman/woman8.jpg" alt="" style="width: 80%; height:auto;">
+                <img id="main-image" class="img" src="img/woman/woman8.jpg" alt="" style="width: 80%; height:auto;">
             </div>
             <div class="col-md-4">
-                <h2>>ACE 16 PureControl Ultra Boost Kith Flamingos</h2>
-                <h2 style="margin-top: 20px;">$145</h2>
+                <h2 class="name" id="product-name">>ACE 16 PureControl Ultra Boost Kith Flamingos</h2>
+                <h2 style="margin-top: 20px;"><span class="price">145</span>$</h2>
+
                 <p>Size</p>
                 <div class="size">
                     <button type="button" class="btn btn-outline-secondary color-button">S</button>
@@ -124,22 +161,12 @@
                     <button class="btn btn-primary" id="blue-color"></button>
                     <button class="btn btn-secondary" id="grey-color"></button>
                     <button class="btn btn-success" id="green-color"></button>
-                    <button class="btn btn-danger" id="red-color"></button>
                     <button class="btn btn-warning" id="yellow-color"></button>
+                    <button class="btn" id="red-color" style="background-color: red;"></button>
                     <button class="btn btn-info" id="blue-color-2"> </button>
                 </div>
-                <p>Number</p>
-                <form>
-                    <select id="mySelect">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </form>
-                <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"
-                    onclick="window.location.href='index.html'">Add to Cart</button>
+                <div href="#"><button type="button" class="btn btn-primary btn-cart" style="margin-top: 20px; margin-bottom: 20px;"
+                    >Add to Cart</button></div>
                     <p>-72 hours Return/Exchange policy <br>
                         -Standard shipping fee: 35.000 VND <br>
                         -Shipping fee within Hanoi: 20.000 VND <br>
@@ -257,7 +284,9 @@
 
     <script src="login.js"></script>
     <script src="color-select.js"></script>
+    <script src="cart.js"></script>
     <script src="search.js"></script>
+    <script src="test-cart.js"></script>
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

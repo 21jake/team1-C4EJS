@@ -451,6 +451,8 @@ h5.modal-title {
     width: 20%;
     font-size: 1.2em;
     color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 .cart-quantity {
