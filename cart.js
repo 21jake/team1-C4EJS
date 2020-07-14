@@ -15,7 +15,10 @@ close_footer.onclick = function () {
   modal.style.display = "none";
 }
 order.onclick = function () {
-  alert("Cảm ơn bạn đã thanh toán đơn hàng")
+  let checkoutAmount = document.getElementsByClassName("cart-total-price")[0].innerText;
+  console.log(checkoutAmount)
+  localStorage.setItem("checkoutAmount", checkoutAmount)
+
 }
 window.onclick = function (event) {
   if (event.target == modal) {
@@ -121,7 +124,15 @@ function addItemToCart(title, price, img) {
   <span class="cart-price cart-column">${price}</span>
   <div class="cart-quantity cart-column">
       <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
+      <form>
+            <select id="sizeSelect" class="mr-3">
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+                <option value="4">XL</option>
+            </select>
+        </form>
+      <button class="btn btn-danger" type="button">Delete</button>
   </div>`
 
 
@@ -148,4 +159,17 @@ function addItemToCart(title, price, img) {
 }
 
 
+function refresh() {
+  let cartPrices = document.getElementsByClassName("cart-price");
+  let cartQuan = document.getElementsByClassName("cart-quantity-input");
+  let cartPriceTotal = 0;
+  for (i = 0; i < cartPrices.length - 1; i++) {
+    price = Number(cartPrices[i + 1].innerHTML)
+    quantity = cartQuan[i].value;
+    cartPriceTotal = cartPriceTotal + (price * quantity)
+  }
+  document.getElementsByClassName("cart-total-price")[0].innerText = cartPriceTotal;
+  // console.log(a*b)
+  // console.log(b)
+}
 

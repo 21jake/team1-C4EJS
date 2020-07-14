@@ -19,7 +19,7 @@
 
     <!-- Navigation bar -->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container-fluid">
 
             <a href="index.html" class="navbar-brand"> <img src="img/logo.jpg" alt="logo-image"></a>
@@ -47,11 +47,47 @@
                     <li class="nav-item ">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
+                    <li class="nav-item" onclick="refresh()">
+                        <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="d-none d-xl-inline">View Cart</span>
+                            <span class=" d-md-inline">View Cart</span>
                         </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cart</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column ">Product</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
+                                        <span class="cart-quantity cart-header cart-column ">Piece</span>
+                                    </div>
+
+
+                                    <div id="product-list">
+
+                                    </div>
+
+                                    <div class="cart-items">
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                                    <button type="button" class="btn btn-primary order">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
@@ -60,7 +96,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="index.html" class="nav-link" title="Click here to log out">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
@@ -107,13 +143,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <img id="main-image" src="img/sale/sale1.jpg" alt="" style="width: 80%; height:auto;">
+                <img id="main-image" class="img" src="img/sale/sale1.jpg" alt="" style="width: 80%; height:auto;">
             </div>
             <div class="col-md-4">
-                <h2>Adidas Yeezy Boost 350 V2 Zebra</h2>
+                <h2 class="name">Adidas Yeezy Boost 350 V2 Zebra</h2>
                 <div>
                     <h2 style="margin-top: 20px;display: inline-block;" class="sale"> $210</h2>
-                    <h2 style="display: inline-block;"> $120</h2>
+                    <h2 style="display: inline-block;" class="price"> 120</h2> $
                     </div>
                 <p>Size</p>
                 <div class="size">
@@ -127,22 +163,12 @@
                     <button class="btn btn-primary" id="blue-color"></button>
                     <button class="btn btn-secondary" id="grey-color"></button>
                     <button class="btn btn-success" id="green-color"></button>
-                    <button class="btn btn-danger" id="red-color"></button>
+                    <button class="btn btn-danger d-none" id="red-color"></button>
                     <button class="btn btn-warning" id="yellow-color"></button>
                     <button class="btn btn-info" id="blue-color-2"> </button>
                 </div>
-                <p>Number</p>
-                <form>
-                    <select id="mySelect">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </form>
-                <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"
-                    onclick="window.location.href='index.html'">Add to Cart</button>
+                <div href="#"><button type="button" class="btn btn-primary btn-cart" style="margin-top: 20px; margin-bottom: 20px;"
+                    >Add to Cart</button></div>
                     <p>-72 hours Return/Exchange policy <br>
                         -Standard shipping fee: 35.000 VND <br>
                         -Shipping fee within Hanoi: 20.000 VND <br>
@@ -256,9 +282,11 @@
     </footer>
 
 
+    <script src="cart.js"></script>
     <script src="login.js"></script>
-    <script src="app.js"></script>
     <script src="color-select.js"></script>
+    <script src="test-cart.js"></script>
+
     <script src="search.js"></script>
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
