@@ -46,7 +46,7 @@
                     <li class="nav-item ">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="refresh()">
                         <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
                             <span class=" d-md-inline">View Cart</span>
@@ -61,7 +61,7 @@
                                 <div class="modal-body">
                                     <div class="cart-row">
                                         <span class="cart-item cart-header cart-column ">Product</span>
-                                        <span class="cart-price cart-header cart-column ">Price</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
                                         <span class="cart-quantity cart-header cart-column ">Piece</span>
                                     </div>
 
@@ -74,8 +74,9 @@
 
                                     </div>
                                     <div class="cart-total">
-                                        <strong class="cart-total-title">Total:</strong>
-                                        <span class="cart-total-price">0VNĐ</span>
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
                                     </div>
 
                                 </div>
@@ -154,7 +155,7 @@
                         <a href="#">
                             <h4 class="card-title name">Air Jordan Boost 350 V2 Zebra</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p>  <span class="card-text lead price">120$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p> $ <span class="card-text lead price">120</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -166,7 +167,7 @@
                         <a href="#">
                             <h4 class="card-title name">Puma New Advanced Running White</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$225</p>  <span class="card-text lead price">125$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$225</p>$  <span class="card-text lead price">125</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -178,7 +179,7 @@
                         <a href="#">
                             <h4 class="card-title name">Timberland 6 Inch Black ver 2019</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p>  <span class="card-text lead price">120$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p>$  <span class="card-text lead price">120</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -190,7 +191,7 @@
                         <a href="#">
                             <h4 class="card-title name">Vans Era feat Adidas No Retreat</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$200</p>  <span class="card-text lead price">140$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$200</p> $ <span class="card-text lead price">140</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -202,7 +203,7 @@
                         <a href="#">
                             <h4 class="card-title name">Nike Air Max Broken and Tamed</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p>  <span class="card-text lead price">120$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p> $ <span class="card-text lead price">120</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -214,7 +215,7 @@
                         <a href="#">
                             <h4 class="card-title name">Nike Air Joe Rogan Black v2</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$300</p>  <span class="card-text lead price">135$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$300</p> $ <span class="card-text lead price">135</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -226,7 +227,7 @@
                         <a href="#">
                             <h4 class="card-title name">Nike Air Force Doggo Good Boi</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p>  <span class="card-text lead price">120$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p> $ <span class="card-text lead price">120</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -238,7 +239,7 @@
                         <a href="#">
                             <h4 class="card-title name">Adidas OffWhite Retro Playoffs Bred </h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p>  <span class="card-text lead price">120$</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p> $ <span class="card-text lead price">120</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>

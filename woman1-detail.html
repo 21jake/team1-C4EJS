@@ -47,7 +47,7 @@
                     <li class="nav-item ">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="refresh()">
                         <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
                             <span class=" d-md-inline">View Cart</span>
@@ -62,7 +62,7 @@
                                 <div class="modal-body">
                                     <div class="cart-row">
                                         <span class="cart-item cart-header cart-column ">Product</span>
-                                        <span class="cart-price cart-header cart-column ">Price</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
                                         <span class="cart-quantity cart-header cart-column ">Piece</span>
                                     </div>
 
@@ -75,8 +75,9 @@
 
                                     </div>
                                     <div class="cart-total">
-                                        <strong class="cart-total-title">Total:</strong>
-                                        <span class="cart-total-price">0VNĐ</span>
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
                                     </div>
 
                                 </div>
@@ -148,7 +149,7 @@
             </div>
             <div class="col-md-4">
                 <h2 class="name" id="product-name">Nike Air Force 1 Low White (2020)</h2>
-                <h2 style="margin-top: 20px;" class="price">80$</h2>
+                <h2 style="margin-top: 20px;" class="price">80</h2>$
                 <p>Size</p>
                 <div class="size">
                     <button type="button" class="btn btn-outline-secondary color-button">S</button>
@@ -282,9 +283,9 @@
     <script src="color-select.js"></script>
     <script src="login.js"></script>
     <script src="cart.js"></script>
-    
     <script src="search.js"></script>
     <script src="test-cart.js"></script>
+
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
