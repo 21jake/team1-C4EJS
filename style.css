@@ -541,3 +541,13 @@ h5.modal-title {
     background-color: white;
     color: black;
 }
+#searchInput{
+    border: none;
+    border-radius: 10px;
+    
+    background-color: #dfdfdf ;
+    padding:10px ;
+}
+#search-bar{
+  margin-top: -7px;
+}
