@@ -38,17 +38,53 @@
                     <li class="nav-item ">
                         <a href="woman.html" class="nav-link">Woman</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a href="sale.html" class="nav-link">SALE OFF</a>
                     </li>
                     <li class="nav-item active">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
+                    <li class="nav-item" onclick="refresh()">
+                        <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="d-none d-xl-inline">View Cart</span>
+                            <span class=" d-md-inline">View Cart</span>
                         </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cart</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column ">Product</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
+                                        <span class="cart-quantity cart-header cart-column ">Piece</span>
+                                    </div>
+
+
+                                    <div id="product-list">
+
+                                    </div>
+
+                                    <div class="cart-items">
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                                    <button type="button" class="btn btn-primary order">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
@@ -57,7 +93,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="best-seller2.html" class="nav-link" title="Click here to log out">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
@@ -111,100 +147,119 @@
     </div>
 
     <div class="container-fluid padding new-arrivals-section">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4">Best Sellers</h1>
+                <div class="row justify-content-start ml-3">
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by Price
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" onclick="ascFunction()" href="#">Low to High</a>
+                          <a class="dropdown-item" onclick="descFunction()" href="#">High to Low</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid padding new-arrivals-section">
         <div class="row padding card-section">
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller1.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller1.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Converse 1970s Sneakerz Freaks</h4>
+                            <h4 class="card-title name">Converse 1970s Sneakerz Freaks</h4>
                         </a>
-                        <p class="card-text lead">Price: $120</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">120</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller2.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller2.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Adidas Allstar Heels Heaven</h4>
+                            <h4 class="card-title name">Adidas Allstar Heels Heaven</h4>
                         </a>
-                        <p class="card-text lead">Price: $125</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">125</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller3.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller3.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Vans OldSchool Comfy Walk</h4>
+                            <h4 class="card-title name">Vans OldSchool Comfy Walk</h4>
                         </a>
-                        <p class="card-text lead">Price: $200</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">200</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller4.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller4.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Classic Timberland Urban Design</h4>
+                            <h4 class="card-title name">Classic Timberland Urban Design</h4>
                         </a>
-                        <p class="card-text lead">Price: $140</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">140</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller7.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller7.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Air Jordan No Retreat Clean</h4>
+                            <h4 class="card-title name">Air Jordan No Retreat Clean</h4>
                         </a>
-                        <p class="card-text lead">Price: $140</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">140</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller5.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller5.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Adidas Stansmith Symptomps</h4>
+                            <h4 class="card-title name">Adidas Stansmith Symptomps</h4>
                         </a>
-                        <p class="card-text lead">Price: $135</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">135</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller6.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller6.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Rick Owens Foot Fetish Alpha</h4>
+                            <h4 class="card-title name">Rick Owens Foot Fetish Alpha</h4>
                         </a>
-                        <p class="card-text lead">Price: $120</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">120</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/bestseller/bestseller8.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/bestseller/bestseller8.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Nike Fairy Air Dream in Heels</h4>
+                            <h4 class="card-title name">Nike Fairy Air Dream in Heels</h4>
                         </a>
-                        <p class="card-text lead">Price: $145</p>
-                        <a href="#"><button type="button" class="btn btn-primary">Add to cart</button></a>
+                        <p class="card-text lead">Price: $ <span class="price">145</span> </p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
@@ -335,9 +390,11 @@
 
 
 
+    <script src="cart.js"></script>
     <script src="login.js"></script>
-    <script src="type-writter-bs.js"></script>
     <script src="search.js"></script>
+    <script src="sort-by-price.js"></script>
+    <script src="test-cart.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
