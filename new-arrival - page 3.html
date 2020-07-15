@@ -44,10 +44,45 @@
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="d-none d-xl-inline">View Cart</span>
+                            <span class=" d-md-inline">View Cart</span>
                         </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Giỏ Hàng</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column ">Sản Phẩm</span>
+                                        <span class="cart-price cart-header cart-column ">Giá</span>
+                                        <span class="cart-quantity cart-header cart-column ">Số Lượng</span>
+                                    </div>
+
+
+                                    <div id="product-list">
+
+                                    </div>
+
+                                    <div class="cart-items">
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                                        <span class="cart-total-price">0VNĐ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
@@ -113,98 +148,97 @@
         <div class="row padding card-section">
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na17.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na17.jpg" alt="" class="w-100 img" ></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">BALENCIAGA ALLOVER TRIPLE S</h4>
+                            <h4 class="card-title name">BALENCIAGA ALLOVER TRIPLE S</h4>
                         </a>
-                        <p class="card-text lead">Price: $190</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="BALENCIAGA ALLOVER TRIPLE S" 
-                            data-price="190">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $190</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na18.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na18.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">ADIDAS VULC CONTINENTAL</h4>
+                            <h4 class="card-title name">ADIDAS VULC CONTINENTAL</h4>
                         </a>
-                        <p class="card-text lead">Price: $199</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="ADIDAS VULC CONTINENTAL" data-price="199">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $199</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na19.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na19.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">BALENCIAGA SPEED CLEAR SOLE SNEAKER</h4>
+                            <h4 class="card-title name">BALENCIAGA SPEED CLEAR SOLE SNEAKER</h4>
                         </a>
-                        <p class="card-text lead">Price: $280</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="BALENCIAGA SPEED CLEAR SOLE SNEAKER" data-price="180">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $280</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na20.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na20.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Nike Pre-Love O.X Green Navi</h4>
+                            <h4 class="card-title name">Nike Pre-Love O.X Green Navi</h4>
                         </a>
-                        <p class="card-text lead">Price: $170</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="Nike Pre-Love O.X" data-price="170">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $170</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na21.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na21.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">SUPERSTAR ADV X GONZ </h4>
+                            <h4 class="card-title name">SUPERSTAR ADV X GONZ </h4>
                         </a>
-                        <p class="card-text lead">Price: $120</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="SUPERSTAR ADV X GONZ" data-price="120">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $120</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na22.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na22.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">D&G NS1 SNEAKERS IN MIXED</h4>
+                            <h4 class="card-title name">D&G NS1 SNEAKERS IN MIXED</h4>
                         </a>
-                        <p class="card-text lead">Price: $330</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="D&G NS1 SNEAKERS IN MIXED" data-price="330">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $330</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na23.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na23.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">PUMA Suede Classic+ Sneakers</h4>
+                            <h4 class="card-title name">PUMA Suede Classic+ Sneakers</h4>
                         </a>
-                        <p class="card-text lead">Price: $160</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="PUMA Suede Classic+ Sneakers" data-price="160">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $160</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#"><img src="img/newarrivals/na24.jpg" alt="" class="w-100"></a>
+                    <a href="#"><img src="img/newarrivals/na24.jpg" alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#">
-                            <h4 class="card-title">Future Rider Play On Sneakers</h4>
+                            <h4 class="card-title name">Future Rider Play On Sneakers</h4>
                         </a>
-                        <p class="card-text lead">Price: $199</p>
-                        <a href="#"><button type="button" class="btn btn-primary" data-name="Future Rider Play On Sneakers" data-price="199">Add to cart</button></a>
+                        <p class="card-text lead price">Price: $199</p>
+                        <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
             </div>
@@ -344,7 +378,8 @@
 
 
 
-
+    <script src="cart.js"></script>
+    <script src="test-cart.js"></script>
     <script src="login.js"></script>
     <script src="search.js"></script>
 

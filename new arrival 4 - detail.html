@@ -45,10 +45,45 @@
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="d-none d-xl-inline">View Cart</span>
+                            <span class=" d-md-inline">View Cart</span>
                         </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Giỏ Hàng</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column ">Sản Phẩm</span>
+                                        <span class="cart-price cart-header cart-column ">Giá</span>
+                                        <span class="cart-quantity cart-header cart-column ">Số Lượng</span>
+                                    </div>
+
+
+                                    <div id="product-list">
+
+                                    </div>
+
+                                    <div class="cart-items">
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                                        <span class="cart-total-price">0VNĐ</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
@@ -104,12 +139,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <img id="main-image" src="img/newarrivals/na detail/nad4.jpg" alt="" style="width: 80%; height:auto;">
+                <img id="main-image" class="img" src="img/newarrivals/na detail/nad4.jpg" alt="" style="width: 80%; height:auto;">
             </div>
             <div class="col-md-4">
-                <h2>BALENCIAGA SPEED CLEAR SOLE
+                <h2 class="name">BALENCIAGA SPEED CLEAR SOLE
                 </h2>
-                <h2 style="margin-top: 20px;">$440</h2>
+                <h2 style="margin-top: 20px;" class="price">$440</h2>
                 <p>Size</p>
                 <div class="size">
                     <button type="button" class="btn btn-outline-secondary color-button">S</button>
@@ -160,8 +195,8 @@
                         mainImg.setAttribute('src',"img/newarrivals/na detail/nad4_6.jpg")
                     });
                 </script>
-                <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"
-                    onclick="window.location.href='index.html'">Add to Cart</button>
+                <div href="#"><button type="button" class="btn btn-primary btn-cart" style="margin-top: 20px; margin-bottom: 20px;"
+                    >Add to Cart</button></div>
                     <p>-72 hours Return/Exchange policy <br>
                         -Standard shipping fee: 35.000 VND <br>
                         -Shipping fee within Hanoi: 20.000 VND <br>
@@ -277,6 +312,8 @@
 
 
 
+    <script src="test-cart.js"></script>
+    <script src="cart.js"></script>
     <script src="login.js"></script>
     <script src="color-select.js"></script>
     <script src="search.js"></script>
