@@ -1,6 +1,7 @@
 //LẤy các dữ liệu sản phẩm trên HTML
-priceList = document.getElementsByClassName("price-tag");
-productNameList = document.getElementsByClassName("product-name");
+priceList = document.getElementsByClassName("card-text lead price");
+priceSale = document.getElementsByClassName("sale");
+productNameList = document.getElementsByClassName("card-title name");
 productImgList = document.getElementsByClassName("product-image");
 productLinkList = document.getElementsByClassName("product-link");
 productLinkList2 = document.getElementsByClassName("product-link2");
@@ -15,6 +16,7 @@ for (i = 0; i < mainLength; i++) {
         source: productImgList[i].getAttribute("src"),
         name: productNameList[i].innerHTML,
         price: priceList[i].innerHTML,
+        sale: priceSale[i].innerHTML
     }
     productArray.push(productObject);
 }
@@ -35,6 +37,7 @@ function ascFunction() {
         productLinkList2[i].href = ascArray[i].link2
         productImgList[i].src = ascArray[i].source;
         priceList[i].innerHTML = ascArray[i].price;
+        priceSale[i].innerHTML = ascArray[i].sale;
         productNameList[i].innerHTML = ascArray[i].name;
     }
 }
@@ -49,6 +52,7 @@ function descFunction() {
         productLinkList2[i].href = descArray[i].link2
         productImgList[i].src = descArray[i].source;
         priceList[i].innerHTML = descArray[i].price;
+        priceSale[i].innerHTML = descArray[i].sale;
         productNameList[i].innerHTML = descArray[i].name;
     }
 }
