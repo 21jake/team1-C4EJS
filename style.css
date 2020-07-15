@@ -174,6 +174,9 @@ footer a:hover {
 /* Login/Logout/SignUp */
 
 @media (max-width: 992px) {
+    #man-section p , #woman-section p {
+        font-size: 1rem;
+    }
     .typedtext {
         font-size: 1.9rem;
     }
@@ -211,7 +214,9 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    
+    .sale-section {
+        display: none;
+    }
     .welcome p.lead {
         font-size: 1.2rem;
     }
@@ -446,6 +451,8 @@ h5.modal-title {
     width: 20%;
     font-size: 1.2em;
     color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 .cart-quantity {
@@ -476,7 +483,7 @@ h5.modal-title {
     background-color: #CC4C4C;
 }
 
-.cart-quantity-input {
+.cart-quantity-input, #sizeSelect {
     height: 34px;
     width: 50px;
     border-radius: 5px;
@@ -525,3 +532,24 @@ h5.modal-title {
     margin-left: .5em;
     font-size: 1.2em;
   }
+#nav-menu ul li{
+    position: relative;
+}
+
+#nav-menu ul li ul {
+    position: absolute;
+}
+#nav-menu ul li ul {
+    background-color: white;
+    color: black;
+}
+#searchInput{
+    border: none;
+    border-radius: 10px;
+    
+    background-color: #dfdfdf ;
+    padding:10px ;
+}
+#search-bar{
+  margin-top: -7px;
+}

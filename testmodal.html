@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f82ed006cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modalShopNow.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand"> <img src="img/logo.jpg" alt="logo-image"></a>
+
+            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="nav-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#new-section" class="nav-link">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#man-section" class="nav-link">Man</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#woman-section" class="nav-link">Woman</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#sale-section" class="nav-link">SALE OFF</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#trend-section" class="nav-link">Bestseller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="d-none d-xl-inline">View Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="cart-icon">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class=" d-none d-xl-inline">Log In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="logOutIcon" onclick="logOut()">
+                        <a href="index.html" class="nav-link" title="Click here to log out">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="d-md-inline" id="userIdentity"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="search-bar">
+                        <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search"
+                            style="margin-top: 5px; width: 150px;">
+
+                        <ul id="items" style="display: none;" id="listSearch">
+                            <li><a href="detail.html">Jordan 1</a></li>
+                            <li><a href="man1-detail.html">Jordan 3</a></li>
+                            <li><a href="man2-detail.html">New Balance</a></li>
+                            <li><a href="man3-detail.html">Vans Sk8-Hi</a></li>
+                            <li><a href="man5-detail.html">adidas Ultra Boost</a></li>
+                            <li><a href="man6-detail.html">adidas Yeezy Boost</a></li>
+                            <li><a href="man7-detail.html">adidas Human Race</a></li>
+                            <li><a href="man8-detail.html">Vans Slip-On 98</a></li>
+                            <li><a href="woman1-detail.html">Nike Air Force 1 </a></li>
+                            <li><a href="woman3-detail.html">Converse Chuck Taylor</a></li>
+                            <li><a href="woman4-detail.html">Nike Air Max 1/97</a></li>
+                            <li><a href="woman5-detail.html">>DAYMASTER SNEAKERS </a></li>
+                            <li><a href="best-seller-detail1.html">>Converse 1970s</a></li>
+                            <li><a href="best-seller-detail2.html">Vans Old School</a></li>
+                            <li><a href="best-seller-detail3.html">Air Jordan High Top</a></li>
+                            <li><a href="best-seller-detail4.html">Timberland 6 Inch Boot</a></li>
+                            <li><a href="best-seller-detail5.html">Air Jordan OG Chicago</a></li>
+                            <li><a href="best-seller-detail6.html">Nike Air Force Symptomps</a></li>
+                            <li><a href="new-arrival-detail1.html">Nike Air Zoom Pegasus 37</a></li>
+                            <li><a href="new-arrival-detail2.html">Nike Joyride Dual Run</a></li>
+                            <li><a href="new-arrival-detail3.html">ADDIDAS ULTRABOOST 20</a></li>
+                            <li><a href="new-arrival-detail4.html">BALENCIAGA SPEED</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!--             
+                <ul class="navbar-nav ml-auto">
+                    
+                </ul> -->
+
+
+        </div>
+    </nav>
+
+    <!--- Carousel Slide -->
+
+    <div id="slides" class="carousel slide" data-ride="carousel" data-interval="7000" style="z-index: 0;">
+        <ul class=" carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slide1.png" alt="First Slide">
+                <div class="carousel-caption">
+                    <h1>ARE YOU READY?</h1>
+                    <h3 class="display-5">Harder Faster Stronger</h3>
+                    <button type="button" class="btn btn-primary btn-lg" id="modalButton">Show now</button>
+                    <button type="button" class="btn btn-outline-light btn-lg">Contact us</button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide2.jpeg" alt="First Slide">
+                <div class="carousel-caption">
+                    <h1>SUMMER SALE</h1>
+                    <h3 class="display-5">Up to 50%!</h3>
+                    <a href="sale.html" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg">Place Order</button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide3.jpeg" alt="First Slide">
+                <div class="carousel-caption ">
+                    <h1>We are hiring...</h1>
+                    <input type="text" class="form-control col-md-8 ml-auto m-auto" placeholder="Enter your email">
+                    <button type="button" class="btn btn-dark btn-md">Join now</button>
+                </div>
+            </div>
+            <!-- d-flex justify-content-center flex-column text-center -->
+        </div>
+    </div>
+    <!-- Modal Image when click Shop Now -->
+    <div id="shopnowModal" class="modal container-fluid text-center">
+
+        <!-- Modal content -->
+        <div class="modal-content row text-center justify-content-center">
+          <span class="close">&times;</span>
+          <h4 class="display-5 text-center col-12 padding" id="modal-head-text">What are you shopping for?</h4>
+          <div class="row position-relative justify-content-center" >
+              <div class="col-5"  id="modal-man ">
+                <a href="man.html" target="_blank">
+                    <img src="img/background-photo/modal-man.jfif"  class="img-fluid">
+                </a>
+                <a href="man.html" target="_blank">
+                    <h3 class="modal-text position-absolute" id="modal-man-text">  Man</h3>
+                </a>
+                </div>
+                
+            
+              <div class="col-5"  id="modal-woman">
+                <a href="woman.html" target="_blank">
+                    <img src="img/background-photo/modal-woman.jfif"class="img-fluid" >
+                </a>
+                <a href="woman.html" target="_blank">
+                    <h3 class="modal-text position-absolute">Woman</h3>
+                </a>
+            </div>
+
+          </div>
+        </div>
+      
+      </div>
+
+
+
+
+    <!-- New Homepage template -->
+
+    <!-- Welcome -->
+
+    <div class="welcome container-fluid padding justify-content-center w-75">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum commodi nostrum, deserunt
+                    consequuntur, vitae nesciunt quo fugiat et vero, ex provident eaque exercitationem! Optio, deleniti
+                    sint libero enim a minima?</p>
+            </div>
+            <hr>
+            <div class="col-12 mt-5">
+                <h1 class="">WE HAVE SNEAKERS...</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- For Man Section -->
+    <div class="container-fluid padding for-man" id="man-section">
+        <div class="row padding justify-content-around">
+            <div class="col-md-4 p-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>For Man</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate mollitia
+                            quia incidunt quod, maxime in nobis id eos vel libero iusto minus reprehenderit est
+                            laudantium suscipit facere perferendis ratione voluptatum.</p>
+                        <br>
+
+                    </div>
+
+                    <a class="col-6 col-md-8" href="man.html" target="_blank"><button type="button"
+                            class=" btn btn-dark btn-lg">Visit Store for Man</button></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row no-padding">
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/man1.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/man1.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/man2.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/man2.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/man3.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/man3.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/man4.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/man4.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+    <!-- For Woman Section -->
+
+    <div class="container-fluid padding for-woman" id="woman-section">
+        <div class="row padding justify-content-around">
+            <div class="col-md-6">
+                <div class="row no-padding">
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/woman1.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/woman1.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/woman2.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/woman2.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/woman3.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/woman3.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="sample-img">
+                            <a href="img/homepage-store-img/woman4.jpg" target="_blank"><img
+                                    src="img/homepage-store-img/woman4.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="row text-right">
+                    <div class="col-12">
+                        <h2>...and Woman</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate mollitia
+                            quia incidunt quod, maxime in nobis id eos vel libero iusto minus reprehenderit est
+                            laudantium suscipit facere perferendis ratione voluptatum.</p>
+                        <br>
+                    </div>
+                    <a class="col-6 col-md-8 ml-auto" href="woman.html" target="_blanl"><button type="button"
+                            class=" btn-lg btn btn-danger ">Visit Store for Woman</button></a>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+    <!--Best-seller, New Arrivals   -->
+
+    <div class="container-fluid padding">
+        <div class="row padding justify-content-around">
+            <div class="col-md-5 mb-5 lastest-product">
+                <div class="row">
+                    <div class="col-12 padding p-5 bg-success text-white" id="new-section">
+                        <h1>New Arrivals</h1>
+                        <p class="lead font-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Perspiciatis illum veniam beatae hic doloribus voluptas officia fugiat dignissimos.
+                            Dignissimos iste maiores voluptatibus excepturi! Possimus iure molestias facere delectus,
+                            ipsum dolore.</p>
+                        <a href="new-arrival.html" target="_blank"><button type="button"
+                                class="btn btn-light btn-lg col-12 mt-5">See lastest products</button></a>
+                    </div>
+                    <div class="col-12">
+                        <div class="row no-padding">
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/new1.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/new1.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/new2.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/new2.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/new3.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/new3.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/new4.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/new4.jpg"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mb-5 trending-product" id="trend-section">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="row no-padding">
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/trend1.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/trend1.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/trend2.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/trend2.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/trend3.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/trend3.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="sample-img">
+                                    <a href="img/homepage-store-img/trend4.jpg" target="_blank"><img
+                                            src="img/homepage-store-img/trend4.jpg"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 p-5 bg-danger text-white" id="trending-section">
+                        <h1>Most trending</h1>
+                        <p class="lead font-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Perspiciatis illum veniam beatae hic doloribus voluptas officia fugiat dignissimos.
+                            Dignissimos iste maiores voluptatibus excepturi! Possimus iure molestias facere delectus,
+                            ipsum dolore.</p>
+                        <a href="best-seller.html" target="_blank"><button type="button"
+                                class="btn btn-light mt-5 btn-lg col-12">See trending products</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sale -->
+
+    <div class="bg row align-items-center padding w-75  mb-5 ml-auto mr-auto sale-section" id="sale-section"
+        style="background-image: url(img/homepage-store-img/home-sale.jpg);">
+        <div class="col align-self-start mt-5 ml-3 sale-top">
+            <h1 class="d-block"><span>SUMMER </span>SALE </h1>
+            <a href="sale.html" target="_blank"><button type="button" class="btn btn-lg btn-danger "> Shop
+                    now</button></a>
+        </div>
+        <div class="col align-self-end mt-5 ml-3 sale-bot">
+            <h1 class="d-block"><span> UP TO</span> 70% OFF </h1>
+        </div>
+
+
+    </div>
+
+
+    <!-- Footer/About Us -->
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-4 padding">
+                    <h1 class="display-4 ">TeamOne</h1>
+                    <hr class="light">
+                    <p>Team one is a fictional entity selling apparel and sneakers. We're a team of four students
+                        learning JavaScript and this is our first project together. This sample website is powered by
+                        HTML, CSS, JavaScript and Bootstrap.</p>
+                    <p>We strongly advise against using this website for commercial intent. This is built purely for
+                        educational purposes, thus every image and even the logo is pirated. Be careful.</p>
+                </div>
+                <div class="col-md-6  col-lg-4">
+                    <div class="row padding">
+                        <div class="col-12">
+                            <h2>Featured Products</h2>
+                        </div>
+                    </div>
+                    <hr class="light">
+
+                    <div class="row padding">
+                        <div class="row col-12">
+                            <a class="col-4" href="#"><img src="img/bestseller/bestseller2.jpg" alt=""
+                                    class="w-100 "></a>
+                            <div class="col-8">
+                                <a href="#">
+                                    <h5>Nike Fairy Air Dream in Heels</h5>
+                                </a>
+                                <p>Price: $120</p>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <a class="col-4" href="#"><img src="img/bestseller/bestseller3.jpg" alt=""
+                                    class="w-100 "></a>
+                            <div class="col-8">
+                                <a href="#">
+                                    <h5>Rick Owens Foot Fetish Alpha</h5>
+                                </a>
+                                <p>Price: $140</p>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <a class="col-4" href="#"><img src="img/bestseller/bestseller7.jpg" alt=""
+                                    class="w-100 "></a>
+                            <div class="col-8">
+                                <a href="#">
+                                    <h5>Air Jordan No Retreat Clean</h5>
+                                </a>
+                                <p>Price: $170</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6  col-lg-4">
+                    <div class="row padding">
+                        <div class="col-12">
+                            <h2>Instagram Posts</h2>
+                        </div>
+                    </div>
+                    <hr class="light">
+                    <div class="row padding instagram-section">
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller1.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller2.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller3.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller4.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller5.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller6.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller7.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller9.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller8.jpg" class="w-100">
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="testmodal.js"></script>
+    <script src="login.js"></script>
+    <script src="search.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

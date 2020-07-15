@@ -19,7 +19,7 @@
 
     <!-- Navigation bar -->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container-fluid">
 
             <a href="index.html" class="navbar-brand"> <img src="img/logo.jpg" alt="logo-image"></a>
@@ -29,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse " id="nav-menu">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a href="new-arrival.html" class="nav-link">New Arrivals</a>
                     </li>
                     <li class="nav-item">
@@ -41,7 +41,7 @@
                     <li class="nav-item ">
                         <a href="sale.html" class="nav-link">SALE OFF</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
                     <li class="nav-item">
@@ -105,7 +105,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <img id="main-image" src="img/bestseller/bestseller2/bestseller2-7.jpg" alt="" style="width: 80%; height:80%;">
+                <img id="main-image" src="img/bestseller/bestseller2/bestseller2-7.jpg" alt="" style="width: 80%; height:auto;">
             </div>
             <div class="col-md-4">
                 <h2>Rick Owens Rush TripleD </h2>
@@ -119,15 +119,8 @@
                 </div>
                 <p>Color</p>
                 <div class="color" id="">
-                    <button class="btn btn-primary" id="blue-color"></button>
-                    <button class="btn btn-secondary" id="grey-color"></button>
-                    <button class="btn btn-success" id="green-color"></button>
-                    <button class="btn btn-danger" id="red-color"></button>
                     <button class="btn btn-warning" id="yellow-color"></button>
-                    <button class="btn btn-info" id="blue-color-2"> </button>
                 </div>
-                <p>Number</p>
-                
                 <script>
                     function myFunction() {
                         document.getElementById("mySelect").value = "Select";

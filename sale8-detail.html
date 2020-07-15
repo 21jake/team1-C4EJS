@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Detail</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f82ed006cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-detail.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand"> <img src="img/logo.jpg" alt="logo-image"></a>
+
+            <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#nav-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="nav-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="new-arrival.html" class="nav-link">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="man.html" class="nav-link">Man</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="woman.html" class="nav-link">Woman</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="sale.html" class="nav-link">SALE OFF</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="best-seller.html" class="nav-link">Bestseller</a>
+                    </li>
+                    <li class="nav-item" onclick="refresh()">
+                        <a href="#" class="nav-link" class="molad" id="cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class=" d-md-inline">View Cart</span>
+                        </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cart</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column ">Product</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
+                                        <span class="cart-quantity cart-header cart-column ">Piece</span>
+                                    </div>
+
+
+                                    <div id="product-list">
+
+                                    </div>
+
+                                    <div class="cart-items">
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                                    <button type="button" class="btn btn-primary order">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item" id="cart-icon">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class=" d-none d-xl-inline">Log In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
+                            <i class="fas fa-sign-out-alt" ></i>
+                            <span class="d-md-inline" id="userIdentity"  ></span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="search-bar">
+                        <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search" style="margin-top: 5px; width: 150px;">
+
+                        <ul id="items" style="display: none;">
+                            <li><a href="detail.html">Jordan 1</a></li>
+                            <li><a href="man1-detail.html">Jordan 3</a></li>
+                            <li><a href="man2-detail.html">New Balance</a></li>
+                            <li><a href="man3-detail.html">Vans Sk8-Hi</a></li>
+                            <li><a href="man5-detail.html">adidas Ultra Boost</a></li>
+                            <li><a href="man6-detail.html">adidas Yeezy Boost</a></li>
+                            <li><a href="man7-detail.html">adidas Human Race</a></li>
+                            <li><a href="man8-detail.html">Vans Slip-On 98</a></li>
+                            <li><a href="woman1-detail.html">Nike Air Force 1 </a></li>
+                            <li><a href="woman3-detail.html">Converse Chuck Taylor</a></li>
+                            <li><a href="woman4-detail.html">Nike Air Max 1/97</a></li>
+                            <li><a href="woman5-detail.html">>DAYMASTER SNEAKERS </a></li>
+                            <li><a href="best-seller-detail1.html">>Converse 1970s</a></li>
+                            <li><a href="best-seller-detail2.html">Vans Old School</a></li>
+                            <li><a href="best-seller-detail3.html">Air Jordan High Top</a></li>
+                            <li><a href="best-seller-detail4.html">Timberland 6 Inch Boot</a></li>
+                            <li><a href="best-seller-detail5.html">Air Jordan OG Chicago</a></li>
+                            <li><a href="best-seller-detail6.html">Nike Air Force Symptomps</a></li>
+                            <li><a href="new-arrival-detail1.html">Nike Air Zoom Pegasus 37</a></li>
+                            <li><a href="new-arrival-detail2.html">Nike Joyride Dual Run</a></li>
+                            <li><a href="new-arrival-detail3.html">ADDIDAS ULTRABOOST 20</a></li>
+                            <li><a href="new-arrival-detail4.html">BALENCIAGA SPEED</a></li>
+                            
+                        </ul>
+                    </li>
+               </ul>
+            </div>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- center -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img id="main-image" src="img/sale/sale8.jpg" alt="" style="width: 80%; height:auto;" class="img">
+            </div>
+            <div class="col-md-4">
+                <h2 class="name">Jordan 11 Retro Playoffs Bred </h2>
+                <div>
+                    <h2 style="margin-top: 20px;display: inline-block;" class="sale"> $225</h2>
+                    <h2 style="display: inline-block;" class="price"> 125</h2>$
+                    </div>
+                <p>Size</p>
+                <div class="size">
+                    <button type="button" class="btn btn-outline-secondary color-button">S</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">M</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">L</button>
+                    <button type="button" class="btn btn-outline-secondary color-button">XL</button>
+                </div>
+                <p>Color</p>
+                <div class="color" id="">
+                    <button class="btn btn-dark" id="grey-color2_2"></button>
+                </div>
+                <div href="#"><button type="button" class="btn btn-primary btn-cart" style="margin-top: 20px; margin-bottom: 20px;"
+                    >Add to Cart</button></div>
+                    <p>-72 hours Return/Exchange policy <br>
+                        -Standard shipping fee: 35.000 VND <br>
+                        -Shipping fee within Hanoi: 20.000 VND <br>
+                        -Cash on Delivery <br>
+                        -Return/Exchange policy does not apply for on-sale products</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer/About Us -->
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-4 padding">
+                    <h1 class="display-4 ">TeamOne</h1>
+                    <hr class="light">
+                    <p>Team one is a fictional entity selling apparel and sneakers. We're a team of four students
+                        learning JavaScript and this is our first project together. This sample website is powered by
+                        HTML, CSS, JavaScript and Bootstrap.</p>
+                    <p>We strongly advise against using this website for commercial intent. This is built purely for
+                        educational purposes, thus every image and even the logo is pirated. Be careful.</p>
+                </div>
+                <div class="col-md-6  col-lg-4">
+                    <div class="row padding">
+                        <div class="col-12">
+                            <h2>Featured Products</h2>
+                        </div>
+                    </div>
+                    <hr class="light">
+
+                    <div class="row padding">
+                        <div class="row col-12 pb-1">
+                            <a class="col-4" href="best-seller-detail1.html"><img src="img/bestseller/bestseller2/bestseller2-1.jpg" alt=""
+                                    class="w-100 h-80"></a>
+                            <div class="col-8">
+                                <a href="best-seller-detail1.html">
+                                    <h5>Converse 1970s</h5>
+                                </a>
+                                <p>Price: $120</p>
+                            </div>
+                        </div>
+                        <div class="row col-12 pb-1">
+                            <a class="col-4" href="best-seller-detail2.html"><img src="img/bestseller/bestseller2/bestseller2-2.jpg" alt=""
+                                    class="w-100 h-80"></a>
+                            <div class="col-8">
+                                <a href="best-seller-detail2.html">
+                                    <h5>Vans Old School</h5>
+                                </a>
+                                <p>Price: $100</p>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <a class="col-4" href="best-seller-detail3.html"><img src="img/bestseller/bestseller2/man4.jpg" alt=""
+                                    class="w-100 h-80"></a>
+                            <div class="col-8">
+                                <a href="best-seller-detail3.html">
+                                    <h5>Air Jordan High Top</h5>
+                                </a>
+                                <p>Price: $200</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6  col-lg-4">
+                    <div class="row padding">
+                        <div class="col-12">
+                            <h2>Instagram Posts</h2>
+                        </div>
+                    </div>
+                    <hr class="light">
+                    <div class="row padding instagram-section">
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller1.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller2.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller3.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller4.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller5.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller6.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller7.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller9.jpg" class="w-100">
+                        </a>
+                        <a class="col-4" href="https://www.instagram.com/tiemgiaycusaigon/" target="_blank">
+                            <img src="img/bestseller/bestseller8.jpg" class="w-100">
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="login.js"></script>
+    <script src="cart.js"></script>
+    <script src="color-select.js"></script>
+    <script src="search.js"></script>
+    <script src="test-cart.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
