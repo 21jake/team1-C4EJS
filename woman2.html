@@ -137,10 +137,22 @@
         </div>
     </nav>
 
-    <div class="container-fluid padding new-arrivals-section" style="margin-top: 10%;">
+    <div class="container-fluid padding new-arrivals-section">
         <div class="row text-center">
             <div class="col-12">
                 <h1 class="display-4">Woman</h1>
+                <div class="row justify-content-start ml-3">
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by Price
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" onclick="ascFunction()" href="#">Low to High</a>
+                          <a class="dropdown-item" onclick="descFunction()" href="#">High to Low</a>
+                        </div>
+                      </div>
+                </div>
+
             </div>
         </div>
     </div>
