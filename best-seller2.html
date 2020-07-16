@@ -38,17 +38,53 @@
                     <li class="nav-item ">
                         <a href="woman.html" class="nav-link">Woman</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a href="sale.html" class="nav-link">SALE OFF</a>
                     </li>
                     <li class="nav-item active">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
+                    <li class="nav-item" onclick="refresh()">
+                        <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="d-none d-xl-inline">View Cart</span>
+                            <span class=" d-md-inline">View Cart</span>
                         </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Cart</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column ">Product</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
+                                        <span class="cart-quantity cart-header cart-column ">Piece</span>
+                                    </div>
+
+
+                                    <div id="product-list">
+
+                                    </div>
+
+                                    <div class="cart-items">
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                                    <button type="button" class="btn btn-primary order">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item" id="cart-icon">
                         <a href="login.html" class="nav-link">
@@ -57,7 +93,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="best-seller2.html" class="nav-link" title="Click here to log out">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
@@ -101,6 +137,25 @@
 
 
     <!-- New Arrival Section -->
+
+    <div class="container-fluid padding new-arrivals-section">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4">Best Sellers</h1>
+                <div class="row justify-content-start ml-3">
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by Price
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" onclick="ascFunction()" href="#">Low to High</a>
+                          <a class="dropdown-item" onclick="descFunction()" href="#">High to Low</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid padding new-arrivals-section">
         <div class="row text-center">
@@ -341,8 +396,9 @@
 
     <script src="sort-by-price.js"></script>
     <script src="login.js"></script>
-    <script src="type-writter-bs.js"></script>
     <script src="search.js"></script>
+    <script src="sort-by-price.js"></script>
+    <script src="test-cart.js"></script>
 
     <!-- Script Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
