@@ -44,7 +44,7 @@
                     <li class="nav-item active">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="refresh()">
                         <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
                             <span class=" d-md-inline">View Cart</span>
@@ -58,8 +58,8 @@
 
                                 <div class="modal-body">
                                     <div class="cart-row">
-                                        <span class="cart-item cart-header cart-column ">Products</span>
-                                        <span class="cart-price cart-header cart-column ">Price</span>
+                                        <span class="cart-item cart-header cart-column ">Product</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
                                         <span class="cart-quantity cart-header cart-column ">Piece</span>
                                     </div>
 
@@ -72,8 +72,9 @@
 
                                     </div>
                                     <div class="cart-total">
-                                        <strong class="cart-total-title">Total:</strong>
-                                        <span class="cart-total-price">0VNĐ</span>
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
                                     </div>
 
                                 </div>
@@ -92,7 +93,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="best-seller3.html" class="nav-link" title="Click here to log out">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
