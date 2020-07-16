@@ -104,11 +104,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <img id="main-image" src="img/man/man6.jpg" alt="" style="width: 80%; height:auto;">
+                <img id="main-image" src="img/man/man4.jpg" alt="" style="width: 80%; height:auto;">
             </div>
             <div class="col-md-4">
-                <h2>adidas Yeezy Boost 700 V2 Blue</h2>
-                <h2 style="margin-top: 20px;">$335</h2>
+                <h2>Jordan 1 Retro High Zoom White</h2>
+                <h2 style="margin-top: 20px;">$340</h2>
                 <p>Size</p>
                 <div class="size">
                     <button type="button" class="btn btn-outline-secondary color-button">S</button>
@@ -118,13 +118,35 @@
                 </div>
                 <p>Color</p>
                 <div class="color" id="">
-                    <button class="btn btn-primary" id="blue-color"></button>
-                    <button class="btn btn-secondary" id="grey-color"></button>
-                    <button class="btn btn-success" id="green-color"></button>
-                    <button class="btn btn-danger" id="red-color"></button>
-                    <button class="btn btn-warning" id="yellow-color"></button>
-                    <button class="btn btn-info" id="blue-color-2"> </button>
+                    <button class="btn btn-primary" id="blue-color4_1"></button>
+                    <button class="btn btn-secondary" id="grey-color4"></button>
+                    <button class="btn btn-success" id="green-color4_3"></button>
+                    <button class="btn btn-danger" id="red-color4_4"></button>
+                    <button class="btn btn-info" id="blue-color4_6"> </button>
                 </div>
+               
+                <script>
+                    function myFunction() {
+                        document.getElementById("mySelect").value = "Select";
+                    }
+                    var mainImg = document.getElementById('main-image');
+                    document.getElementById('blue-color4_1').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/man/man4_1.jpg")
+                    });
+                    document.getElementById('grey-color4').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/man/man4.jpg")
+                    });
+                    document.getElementById('green-color4_3').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/man/man4_3.jpg")
+                    });
+                    document.getElementById('red-color4_4').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/man/man4_4.jpg")
+                    });
+                    document.getElementById('blue-color4_6').addEventListener('click', function() {
+                        mainImg.setAttribute('src',"img/man/man4_6.jpg")
+                    });
+
+                </script>
                 <button type="button" class="btn btn-info" style="margin-top: 20px; margin-bottom: 20px;"
                     onclick="window.location.href='index.html'">Add to Cart</button>
                     <p>-72 hours Return/Exchange policy <br>
