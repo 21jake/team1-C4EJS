@@ -1,6 +1,6 @@
 //LẤy các dữ liệu sản phẩm trên HTML
-priceList = document.getElementsByClassName("price-tag");
-productNameList = document.getElementsByClassName("product-name");
+priceList = document.getElementsByClassName("price-tag price");
+productNameList = document.getElementsByClassName("card-title product-name name");
 productImgList = document.getElementsByClassName("product-image");
 productLinkList = document.getElementsByClassName("product-link");
 productLinkList2 = document.getElementsByClassName("product-link2");
