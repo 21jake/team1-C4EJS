@@ -544,6 +544,9 @@ h5.modal-title {
 #nav-menu ul li ul {
     background-color: white;
     color: black;
+    padding: 3%;
+    width: 110%;
+    font-size: .9rem;
 }
 #searchInput{
     border: none;
