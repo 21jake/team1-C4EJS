@@ -18,7 +18,7 @@
 <body>
     <!-- Navigation bar -->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="product-section">
         <div class="container-fluid">
 
             <a href="index.html" class="navbar-brand"> <img src="img/logo.jpg" alt="logo-image"></a>
@@ -148,8 +148,8 @@
                         Sort by Price
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" onclick="ascFunction()" href="#">Low to High</a>
-                          <a class="dropdown-item" onclick="descFunction()" href="#">High to Low</a>
+                          <a class="dropdown-item" onclick="ascFunction()" href="#product-section">Low to High</a>
+                          <a class="dropdown-item" onclick="descFunction()" href="#product-section">High to Low</a>
                         </div>
                       </div>
                 </div>
@@ -166,7 +166,7 @@
                         <a href="#" class="product-link2">
                             <h4 class="card-title name product-name">Air Jordan Boost 350 V2 Zebra</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p> $ <span class="card-text lead price">120</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$210</p> $ <span class="card-text lead price price-tag">120</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
                         <a href="#" class="product-link2">
                             <h4 class="card-title name product-name">Puma New Advanced Running White</h4>
                         </a>
-                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$225</p>$  <span class="card-text lead price">125</span></p>
+                        <p class="card-text lead" style="display: inline;">Price: <p class="sale" style="display: inline;">$225</p>$  <span class="card-text lead price price-tag">125</span></p>
                         <div href="#"><button type="button" class="btn btn-primary btn-cart">Add to cart</button></div>
                     </div>
                 </div>
@@ -386,7 +386,7 @@
     <script src="cart.js"></script>
     <script src="login.js"></script>
     <script src="search.js"></script>
-    <script src="sort-by-price .js"></script>
+    <script src="sort-by-price.js"></script>
     <script src="test-cart.js"></script>
 
 
