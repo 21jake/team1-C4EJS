@@ -19,7 +19,7 @@
 
     <!-- Navigation bar -->
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="product-section">
         <div class="container-fluid">
 
             <a href="index.html" class="navbar-brand"> <img src="img/logo.jpg" alt="logo-image"></a>
@@ -29,13 +29,16 @@
             </button>
             <div class="collapse navbar-collapse " id="nav-menu">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
                     <li class="nav-item active">
                         <a href="new-arrival.html" class="nav-link">New Arrivals</a>
                     </li>
                     <li class="nav-item">
                         <a href="man.html" class="nav-link">Man</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a href="woman.html" class="nav-link">Woman</a>
                     </li>
                     <li class="nav-item ">
@@ -44,7 +47,7 @@
                     <li class="nav-item ">
                         <a href="best-seller.html" class="nav-link">Bestseller</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" onclick="refresh()">
                         <a href="#" class="nav-link" class="molad" id="cart">
                             <i class="fas fa-shopping-cart"></i>
                             <span class=" d-md-inline">View Cart</span>
@@ -52,15 +55,15 @@
                         <div id="myModal" class="modal">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Giỏ Hàng</h5>
+                                    <h5 class="modal-title">Cart</h5>
                                     <span class="close">&times;</span>
                                 </div>
 
                                 <div class="modal-body">
                                     <div class="cart-row">
-                                        <span class="cart-item cart-header cart-column ">Sản Phẩm</span>
-                                        <span class="cart-price cart-header cart-column ">Giá</span>
-                                        <span class="cart-quantity cart-header cart-column ">Số Lượng</span>
+                                        <span class="cart-item cart-header cart-column ">Product</span>
+                                        <span class="cart-price cart-header cart-column ">Price ($)</span>
+                                        <span class="cart-quantity cart-header cart-column ">Piece</span>
                                     </div>
 
 
@@ -72,15 +75,16 @@
 
                                     </div>
                                     <div class="cart-total">
-                                        <strong class="cart-total-title">Tổng Cộng:</strong>
-                                        <span class="cart-total-price">0VNĐ</span>
+                                        <i class="fas fa-retweet" onclick="refresh()"></i>
+                                        <strong class="cart-total-title">Total ($):</strong>
+                                        <span class="cart-total-price" style="font-size: 1.5rem;"> </span>
                                     </div>
 
                                 </div>
 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
-                                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                                    <button type="button" class="btn btn-primary order">Proceed</button>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +96,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="logOutIcon"  onclick="logOut()">
-                        <a href="index.html" class="nav-link" title="Click here to log out">
+                        <a href="sale.html" class="nav-link" title="Click here to log out">
                             <i class="fas fa-sign-out-alt" ></i>
                             <span class="d-md-inline" id="userIdentity"  ></span>
                         </a>
@@ -144,7 +148,7 @@
             </div>
             <div class="col-md-4">
                 <h2 class="name">DAYMASTER SNEAKERS IN STRETCH</h2>
-                <h2 style="margin-top: 20px;" class="price">$340</h2>
+                <h2 style="margin-top: 20px;">$ <span class="price"> 340</span></h2>
                 <p>Size</p>
                 <div class="size">
                     <button type="button" class="btn btn-outline-secondary color-button">S</button>
@@ -157,20 +161,10 @@
                     <button class="btn btn-primary" id="blue-color5_1"></button>
                     <button class="btn btn-secondary" id="grey-color5_2"></button>
                     <button class="btn btn-success" id="green-color5_3"></button>
-                    <button class="btn btn-danger" id="red-color5_4"></button>
+                    <button class="btn " id="red-color5_4" style="background-color: red;"></button>
                     <button class="btn btn-warning" id="yellow-color5_5"></button>
                     <button class="btn btn-info" id="blue-color5_6"> </button>
                 </div>
-                <p>Number</p>
-                <form>
-                    <select id="mySelect">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </form>
                 <script>
                     function myFunction() {
                         document.getElementById("mySelect").value = "Select";
