@@ -94,14 +94,15 @@
                             <span class=" d-none d-xl-inline">Log In</span>
                         </a>
                     </li>
-                    <li class="nav-item" id="logOutIcon"  onclick="logOut()">
+                    <li class="nav-item" id="logOutIcon" onclick="logOut()">
                         <a href="sale.html" class="nav-link" title="Click here to log out">
-                            <i class="fas fa-sign-out-alt" ></i>
-                            <span class="d-md-inline" id="userIdentity"  ></span>
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="d-md-inline" id="userIdentity"></span>
                         </a>
                     </li>
                     <li class="nav-item" id="search-bar">
-                        <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search" style="margin-top: 5px; width: 150px;">
+                        <input type="text" id="searchInput" onkeyup="itemSearch()" placeholder="Search"
+                            style="margin-top: 5px; width: 150px;">
 
                         <ul id="items" style="display: none;">
                             <li><a href="detail.html">Jordan 1</a></li>
@@ -126,36 +127,34 @@
                             <li><a href="new-arrival-detail2.html">Nike Joyride Dual Run</a></li>
                             <li><a href="new-arrival-detail3.html">ADDIDAS ULTRABOOST 20</a></li>
                             <li><a href="new-arrival-detail4.html">BALENCIAGA SPEED</a></li>
-                            
+
                         </ul>
                     </li>
-               </ul>
-            </div>
                 </ul>
             </div>
+            </ul>
+        </div>
 
         </div>
     </nav>
 
 
     <!-- New Arrival Section -->
-<div class="container-fluid padding new-arrivals-section">
+    <div class="container-fluid padding new-arrivals-section" style="margin-top: 10%;">
         <div class="row text-center">
             <div class="col-12">
                 <h1 class="display-4">New Arrivals</h1>
                 <div class="row justify-content-start ml-3">
-                    <button type="button" class="btn btn-primary m-2" onclick="ascFunction()"> Low to High</button>
-                    <button type="button" class="btn btn-danger font-weight-normal m-2" onclick="descFunction()"> High
-                        to Low</button>
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort by Price
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" onclick="ascFunction()" href="#">Low to High</a>
+                          <a class="dropdown-item" onclick="descFunction()" href="#">High to Low</a>
+                        </div>
+                      </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid padding new-arrivals-section">
-        <div class="row text-center">
-            <div class="col-12">
-                <h1 class="display-4">New Arrivals</h1>
             </div>
         </div>
     </div>
@@ -164,7 +163,8 @@
         <div class="row padding card-section">
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na17.jpg" alt="" class="w-100 img" ></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na17.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">BALENCIAGA ALLOVER TRIPLE S</h4>
@@ -176,7 +176,8 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na18.jpg" alt="" class="w-100 img"></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na18.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">ADIDAS VULC CONTINENTAL</h4>
@@ -188,7 +189,8 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na19.jpg" alt="" class="w-100 img"></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na19.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">BALENCIAGA SPEED CLEAR SOLE SNEAKER</h4>
@@ -200,7 +202,8 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na20.jpg" alt="" class="w-100 img"></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na20.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">Nike Pre-Love O.X Green Navi</h4>
@@ -212,7 +215,8 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na21.jpg" alt="" class="w-100 img"></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na21.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">SUPERSTAR ADV X GONZ 2020</h4>
@@ -224,7 +228,8 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na22.jpg" alt="" class="w-100 img"></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na22.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">D&G NS1 SNEAKERS IN MIXED</h4>
@@ -236,7 +241,8 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na23.jpg" alt="" class="w-100 img"></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na23.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">PUMA Suede Classic+ Sneakers</h4>
@@ -248,7 +254,8 @@
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="card padding">
-                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na24.jpg" alt="" class="w-100 img"></a>
+                    <a href="#" class="product-link"><img class="product-image w-100 img" src="img/newarrivals/na24.jpg"
+                            alt="" class="w-100 img"></a>
                     <div class="card-body">
                         <a href="#" class="product-link2">
                             <h4 class="card-title product-name name">Future Rider Play On Sneakers</h4>
@@ -271,16 +278,15 @@
                     <li class="page-item"><a class="page-link" href="new-arrival.html">1</a></li>
                     <li class="page-item"><a class="page-link" href="new-arrival - page 2.html">2</a></li>
                     <li class="page-item">
-                        <li class="page-item active">
-                            <span class="page-link">
+                    <li class="page-item active">
+                        <span class="page-link">
                             3
                             <span class="sr-only">(current)</span>
-                          </span>
+                        </span>
                     </li>
-                   
-                </ul><li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">Next</a>
-                </li>
+
+                </ul>
+
             </nav>
         </div>
     </div>
@@ -313,8 +319,8 @@
 
                     <div class="row padding">
                         <div class="row col-12 pb-1">
-                            <a class="col-4" href="best-seller-detail1.html"><img src="img/bestseller/bestseller2/bestseller2-1.jpg" alt=""
-                                    class="w-100 h-80"></a>
+                            <a class="col-4" href="best-seller-detail1.html"><img
+                                    src="img/bestseller/bestseller2/bestseller2-1.jpg" alt="" class="w-100 h-80"></a>
                             <div class="col-8">
                                 <a href="best-seller-detail1.html">
                                     <h5>Converse 1970s</h5>
@@ -323,8 +329,8 @@
                             </div>
                         </div>
                         <div class="row col-12 pb-1">
-                            <a class="col-4" href="best-seller-detail2.html"><img src="img/bestseller/bestseller2/bestseller2-2.jpg" alt=""
-                                    class="w-100 h-80"></a>
+                            <a class="col-4" href="best-seller-detail2.html"><img
+                                    src="img/bestseller/bestseller2/bestseller2-2.jpg" alt="" class="w-100 h-80"></a>
                             <div class="col-8">
                                 <a href="best-seller-detail2.html">
                                     <h5>Vans Old School</h5>
@@ -333,8 +339,8 @@
                             </div>
                         </div>
                         <div class="row col-12">
-                            <a class="col-4" href="best-seller-detail3.html"><img src="img/bestseller/bestseller2/man4.jpg" alt=""
-                                    class="w-100 h-80"></a>
+                            <a class="col-4" href="best-seller-detail3.html"><img
+                                    src="img/bestseller/bestseller2/man4.jpg" alt="" class="w-100 h-80"></a>
                             <div class="col-8">
                                 <a href="best-seller-detail3.html">
                                     <h5>Air Jordan High Top</h5>
