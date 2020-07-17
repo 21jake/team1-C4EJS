@@ -249,7 +249,9 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
- 
+    .title-and-sortPrice {
+        margin-top: 30%;
+    }
     .welcome p.lead {
         font-size: 1rem;
     }
