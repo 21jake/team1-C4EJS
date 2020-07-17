@@ -12,14 +12,17 @@ function signUp() {
         }
     }
 
-    
+
 
     if (newUsername == "" || newPassword == "") {
         document.getElementById('signUpMessError').innerHTML = ""
         document.getElementById('signUpMessError').innerHTML = "Invalid name or password! <br>"
-    } else if (newUsername.length < 8 || newPassword.length < 8) {
+    } else if (newUsername.length < 8 || newPassword.length < 8 ) {
         document.getElementById('signUpMessError').innerHTML = ""
         document.getElementById('signUpMessError').innerHTML = "Username and password must be at least 8 characters"
+    } else if ( newUsername.length > 18 || newPassword.length > 18) {
+        document.getElementById('signUpMessError').innerHTML = ""
+        document.getElementById('signUpMessError').innerHTML = "Username and password can't be longer than 18 characters"
     } else if (usernameArray.includes(newUsername)) {
         document.getElementById('signUpMessError').innerHTML = ""
         document.getElementById('signUpMessError').innerHTML = "Username already taken"
